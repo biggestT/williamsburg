@@ -1,0 +1,10 @@
+---
+layout: coffee
+name: Silamo Korate
+image: coffeebean.jpg
+categories: coffee
+origin: Ethiopia
+code: 87Q
+---
+
+This is a hot ass coffee bean

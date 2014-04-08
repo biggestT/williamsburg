@@ -1,2 +1,4 @@
 name: Williamsburg
+description: Coffee Roasters in Shanghai
 markdown: redcarpet
+permalink: /:categories/:title

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="400"
+   height="100.36"
+   id="svg4372">
+  <defs
+     id="defs4374" />
+  <metadata
+     id="metadata4377">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-952.00215)"
+     id="layer1">
+    <text
+       x="10.151638"
+       y="1006.1755"
+       id="text2985"
+       xml:space="preserve"
+       style="font-size:39.72222519px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:3.36319447px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"><tspan
+         x="10.151638"
+         y="1006.1755"
+         id="tspan2987"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:3.36319447px;fill:#ffffff;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS">WILLIAMSBURG</tspan></text>
+    <text
+       x="10.310988"
+       y="1026.8048"
+       id="text3034"
+       xml:space="preserve"
+       style="font-size:19.37199974px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:justify;line-height:100%;letter-spacing:9.87433529px;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+         x="10.310988"
+         y="1026.8048"
+         id="tspan3036"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:9.87433529px;fill:#c69901;fill-opacity:1;font-family:Trebuchet MS;-inkscape-font-specification:Trebuchet MS">COFFEE ROASTERS</tspan></text>
+    <path
+       d="m -0.01116052,958.08093 0,7.63445 368.26499052,-0.72308 -45.00194,75.338 -323.26305052,-0.7231 0,9.1791 339.01000052,0 53.05439,-90.70537 z"
+       id="rect3818"
+       style="fill:#ff0000;fill-opacity:1" />
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+---
+layout: coffee
+name: Makwa Peaberry
+image: coffeebean.jpg
+origin: Kenya
+categories: coffee
+code: 87.5Q
+---
+
+This is a very interesting bean coming from kenya

@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"/>
         <!-- Custom CSS -->
-        <!-- <link rel="stylesheet" href="/css/main.css"> -->
+        <link rel="stylesheet" href="/css/main.css">
 
         <!-- Jquery JS -->
         <script src="libs/jquery-1.11.0.min.js" type="text/javascript"></script>
@@ -20,72 +20,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+       <!-- Twitter Bootstrap navbar -->
 
-      <!--   <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+       <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+           <!--  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a> -->
 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
+            <div class="nav-collapse">
+              <!-- Logo banner -->
+              <a href="/">
+                <div class="brand desktop-logo">
+                  <img  class="desktop-logo" src="graphic/logoHor.svg" type="image/svg+xml"></img>
+                </div>
+                <div class="brand mobile-logo">
+                  <img src="graphic/logoVert.svg"  type="image/svg+xml"></img>
+                </div>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="/explore.html">About</a>
+                  <p class="slash">|</p>
+                </li>
+                <li>
+                  <a href="/learn.html">Learn</a>
+                  <p class="slash">|</p>
+                </li>
+                <li>
+                  <a href="/coffe.html">Coffee</a>
+                  <p class="slash">|</p>
+                </li>
+                <li>
+                  <a href="/addicts.html">Shop</a>
+                </li>
+              </ul>
             </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
- -->
-        <div id="page">
 
-   <!-- Twitter Bootstrap navbar -->
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-
-          <a class="brand" href="/">{{ site.name }}</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/who.html">Who We Are</a></li>
-              <li><a href="/contact.html">Contact Us</a></li>
-            </ul>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Main content area -->
+      <!-- Main content area -->
 
-    <div class="container main-content-container">
-      <div class="row">
-        <div class="span2">
-          <!-- <img id="logo" src="/images/logo.png"> -->
-        </div>
-
-        <div class="span10 main-content">
-          <!-- {{ content }} -->
+      <div class="container content">
+        <div class="row">
+          <!-- <div class="span10 main-content"> -->
+            {{ content }}
+          <!-- </div> -->
         </div>
       </div>
-    </div>
 
-  </div>
+      <div class="footer">
+        <div class="contact">
+          <p>
+            BROOKLYN <b>/</b> NEW YORK 
+          </p>
+          <p>
+            wlemasurier@wcoffeeroasters.com
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="https://github.com/yourusername">weibo</a><br />
+            <a href="https://twitter.com/yourusername">wechat</a><br />
+          </p>
+        </div>
+      </div>
 
-    </body>
+  </body>
 </html>
