@@ -3,6 +3,6 @@ layout: experience
 title: Williamsburg
 ---
 
-#Buy Williamsburg Coffee!
+#Buy A Williamsblend
 
 ##Use Wechat to start buying our coffee
