@@ -8,14 +8,25 @@
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 120px;
   background-color: #4c1200;
+  background: url(../graphic/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
   color: #FFF;
   font: 13.34px 'Gotham Round', Helvetica, sans-serif;
   font-size: large;
-  text-align: center;
+  text-align: left;
 }
 
+p>img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
 a {
   color: #FFF;
   /*font-family: 'Gotham Round', Helvetica, sans-serif;*/
@@ -32,9 +43,6 @@ h1, h2, h3 {
 h1 {
   font-size: 400%;
   margin: 0px 0px 0px 0px;
-  /*border-bottom-style: solid;
-  border-bottom-color: red;
-  border-bottom-width: 2px;*/
 }
 h2 {
   font-size: 200%;
@@ -46,35 +54,39 @@ h2 {
 /* NAVBAR */
 
 .brand {
-  margin: 20px auto 0px auto;
   width: 400px;
 }
-.desktop-logo {
-}
+
 .mobile-logo {
   visibility: hidden;
   width: 0px;
   height: 0px;
 }
+.desktop-logo {
+  margin: 20px auto 0px auto;
+
+}
 
 .navbar {
   background-color: #4c1200;
+  background-color: #000;
 }
+
 .nav {
   text-transform: uppercase;
   font-family: 'Birch', Arial;
-  text-align: center;
-  margin-top: 10px;
+  /*text-align: center;*/
+  margin: 20px 0px;
 }
 
 .nav>li {
   color: #FFF;
   display: inline;
-  margin-bottom: 10px
 }
 
 .nav>li>a {
   display: inline;
+  padding-left: 0px;
   color: #FFF;
   font-family: 'Gotham Round';
 }
@@ -87,14 +99,12 @@ h2 {
   color: #F00;
   display: inline;
 }
-/*.nav>li>.slash:hover {
-  visibility: visible;
-}*/
-
 
 /* CONTENT */ 
 .container {
   min-height: 100%;
+  margin-left: 10%;
+  width: 40%;
 }
 .content {
   margin-top: 80px;
@@ -116,48 +126,54 @@ ul.coffees {
 .coffee-title>h1, .coffee-title>h2 {
   display: inline;
 }
-.coffee-image {
-  max-height: 200px;
-  overflow: hidden;
-}
-.coffee-image>img {
-  width: inherit;
+.coffee-content {
+  margin-bottom: 40px;
 }
 
 /* MOBILE DEVICES */
 
-@media (max-width:750px) {
+@media (max-width: 750px) {
   .desktop-logo {
     visibility: hidden;
-    margin-left: 10px;
     width: 0;
     height: 0;
   }
   .mobile-logo {
     visibility: visible;
-    width: inherit;
-    height: 0px;
-    margin-top: -20px;
+    height: auto;
+    width: 50px;
+    /*margin-top: -20px;*/
   }
   .brand {
+    max-width: 50px;
+    margin: 0px 20px 0px 0px;
     float: left;
   }
   body {
-    padding-left: 90px;
-    padding-top: 50px;
+    /*padding-left: 90px;*/
+    background: -webkit-radial-gradient(#4c1200, #4c0800); /* For Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(#5b0061, #161313); /* For Safari 5.1 to 6.0 */
+    background: -moz-radial-gradient(#5b0061, #161313); /* For Safari 5.1 to 6.0 */
+    padding-top: 70px;
     min-width: 200px;
     font-size: 11px;
     text-align: left;
   }
-  .container {
+  /*.container {
     margin: 0px;
     padding: 0px;
+  }*/
+  img {
+    margin-left: 0;
   }
   .content {
-    margin-top: 0px;
+    margin-top: 40px;
+  }
+  .container {
+    width: 80%;
   }
   .nav {
-    padding-left: 90px;
+    /*padding-left: 90px;*/
     min-width: 360px;
     text-align: left;
   }

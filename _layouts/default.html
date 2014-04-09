@@ -31,29 +31,25 @@
               <span class="icon-bar"></span>
             </a> -->
 
-            <div class="nav-collapse">
+            <div class="row">
               <!-- Logo banner -->
-              <a href="/">
-                <div class="brand desktop-logo">
-                  <img  class="desktop-logo" src="graphic/logoHor.svg" type="image/svg+xml"></img>
-                </div>
-                <div class="brand mobile-logo">
-                  <img src="graphic/logoVert.svg"  type="image/svg+xml"></img>
-                </div>
+              <a class="brand" href="/">
+                  <img  class="desktop-logo" src="graphic/logotypeHor.svg" type="image/svg+xml"></img>
+                  <img class="mobile-logo" src="graphic/logotype.svg"  type="image/svg+xml"></img>
               </a>
               <div>
                 <ul class="nav">
                   <li>
                     <a href="/explore.html">About</a>
-                    <p class="slash">|</p>
+                    <!-- <p class="slash">|</p> -->
                   </li>
                   <li>
                     <a href="/learn.html">Learn</a>
-                    <p class="slash">|</p>
+                    <!-- <p class="slash">|</p> -->
                   </li>
                   <li>
                     <a href="/coffe.html">Browse</a>
-                    <p class="slash">|</p>
+                    <!-- <p class="slash">|</p> -->
                   </li>
                   <li>
                     <a href="/addicts.html">Buy</a>
@@ -70,19 +66,21 @@
       <!-- Main content area -->
 
       <div class="container content">
-        {{ content }}
+        <div class="row">
+          {{ content }}
+        </div>
       </div>
 
       <div class="container footer">
-        <div class="contact">
-          <p>
-            BROOKLYN <b>/</b> NEW YORK 
-          </p>
-          <p>
-            wlemasurier@wcoffeeroasters.com
-          </p>
+        <div class="row contact">
+            <p>
+              BROOKLYN <b>/</b> NEW YORK 
+            </p>
+            <p>
+              wlemasurier@wcoffeeroasters.com
+            </p>
         </div>
-        <div class="contact">
+        <div class="row contact">
           <p>
             <a href="https://github.com/yourusername">weibo</a><br />
             <a href="https://twitter.com/yourusername">wechat</a><br />

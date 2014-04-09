@@ -2,19 +2,17 @@
 layout: default
 ---
 
-<div class="gallery">
-	<ul class="coffees" >
+<!-- <div class="gallery"> -->
 		{% for coffee in site.categories['coffee'] %}
-		<li class="container">
 			<div class="row coffee-title">
 				<h1>{{ coffee.name }}</h1>
 				<h2>{{ coffee.code }}</h2>
 			</div>
 			<div class="row coffee-content">
-				<div class="col-lg-12 col-xs-2 coffee-image">
-					<img src="images/{{ coffee.image }}"></img>
+				<div class="col-lg-6 col-xs-6 coffee-image">
+					<img class="img-responsive coffee-image" src="images/{{ coffee.image }}"></img>
 				</div>
-				<div class="col-lg-12 col-xs-10">
+				<div class="col-lg-6 col-xs-6">
 					<p>
 						Origin:
 						<b>{{ coffee.origin }}</b>  
@@ -22,7 +20,7 @@ layout: default
 					<p>{{ coffee.content }}</p>
 				</div>
 			</div>
-		</li>
+		
 		{% endfor %}
-	</ul>
-</div>
+	
+<!-- </div> -->

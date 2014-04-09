@@ -3,6 +3,10 @@ layout: experience
 title: Williamsburg
 ---
 
-#Brewmaster's guide
+#Education
 
-##Step by step guide
+##Workshops
+
+We organize workshops to improve your skills in coffeebrewing
+
+![workshop](images/education.jpg)
