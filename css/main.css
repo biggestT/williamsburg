@@ -29,7 +29,6 @@ p>img {
 }
 a {
   color: #FFF;
-  /*font-family: 'Gotham Round', Helvetica, sans-serif;*/
 }
 a:hover {
   text-decoration: none;
@@ -75,13 +74,17 @@ h2 {
 .nav {
   text-transform: uppercase;
   font-family: 'Birch', Arial;
-  /*text-align: center;*/
   margin: 20px 0px;
 }
 
 .nav>li {
   color: #FFF;
   display: inline;
+}
+
+.language-options{
+  float: right;
+  margin: 40px 10% 0px 0px;
 }
 
 .nav>li>a {
@@ -95,12 +98,12 @@ h2 {
   background-color: transparent;
 }
 .nav>li>.slash {
-  /*visibility: hidden;*/
   color: #F00;
   display: inline;
 }
 
 /* CONTENT */ 
+
 .container {
   min-height: 100%;
   margin-left: 10%;
@@ -108,10 +111,13 @@ h2 {
 }
 .content {
   margin-top: 80px;
-  /*text-align: left;*/
 }
 
 /* FOOTER */ 
+
+.footer {
+  margin-top: 40px;
+}
 .footer>.contact>p {
   font-size: 90%;
 }
@@ -133,16 +139,18 @@ ul.coffees {
 /* MOBILE DEVICES */
 
 @media (max-width: 750px) {
-  .desktop-logo {
+  .desktop-logo, .desktop-only {
     visibility: hidden;
     width: 0;
     height: 0;
+  }
+  .desktop-only {
+    visibility: hidden;
   }
   .mobile-logo {
     visibility: visible;
     height: auto;
     width: 50px;
-    /*margin-top: -20px;*/
   }
   .brand {
     max-width: 50px;
@@ -150,7 +158,6 @@ ul.coffees {
     float: left;
   }
   body {
-    /*padding-left: 90px;*/
     background: -webkit-radial-gradient(#4c1200, #4c0800); /* For Safari 5.1 to 6.0 */
     background: -webkit-radial-gradient(#5b0061, #161313); /* For Safari 5.1 to 6.0 */
     background: -moz-radial-gradient(#5b0061, #161313); /* For Safari 5.1 to 6.0 */
@@ -159,10 +166,7 @@ ul.coffees {
     font-size: 11px;
     text-align: left;
   }
-  /*.container {
-    margin: 0px;
-    padding: 0px;
-  }*/
+
   img {
     margin-left: 0;
   }
@@ -173,7 +177,6 @@ ul.coffees {
     width: 80%;
   }
   .nav {
-    /*padding-left: 90px;*/
     min-width: 360px;
     text-align: left;
   }

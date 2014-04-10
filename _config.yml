@@ -2,3 +2,19 @@ name: Williamsburg
 description: Coffee Roasters in Shanghai
 markdown: redcarpet
 permalink: /:categories/:title
+
+menuitems:
+  about:
+    en: about
+    ch: 关于
+  coffee:
+    en: coffee
+    ch: 咖啡
+  buy:
+    en: buy
+    ch: 买
+  news:
+    en: news
+    ch: 新闻
+
+

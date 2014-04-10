@@ -24,36 +24,39 @@
 
        <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
+
+          <div class="language-options">
+            <a href="/index.html">En</a>
+            <b>|</b>
+            <a href="/index-ch.html">中文</a>
+          </div>
+
           <div class="container">
-           <!--  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a> -->
 
             <div class="row">
               <!-- Logo banner -->
-              <a class="brand" href="/">
+              
+              {% if page.lang == 'ch' %} 
+              <a class="brand" href="/index-{{ page.lang }}.html">
+                {% else %}
+              <a class="brand" href="/index.html">
+              {% endif  %}
                   <img  class="desktop-logo" src="graphic/logotypeHor.svg" type="image/svg+xml"></img>
                   <img class="mobile-logo" src="graphic/logotype.svg"  type="image/svg+xml"></img>
               </a>
               <div>
                 <ul class="nav">
+                  {% for menuitem in site.menuitems %}
                   <li>
-                    <a href="/explore.html">About</a>
-                    <!-- <p class="slash">|</p> -->
+                    <a href="/{{ menuitem[1].en }}-{{ page.lang }}.html">
+                    {% if page.lang == 'ch' %} 
+                      {{ menuitem[1].ch }}
+                    {% else %}
+                      {{ menuitem[1].en }}
+                    {% endif %}
+                    </a>
                   </li>
-                  <li>
-                    <a href="/learn.html">Learn</a>
-                    <!-- <p class="slash">|</p> -->
-                  </li>
-                  <li>
-                    <a href="/coffe.html">Browse</a>
-                    <!-- <p class="slash">|</p> -->
-                  </li>
-                  <li>
-                    <a href="/addicts.html">Buy</a>
-                  </li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>
@@ -67,6 +70,7 @@
 
       <div class="container content">
         <div class="row">
+
           {{ content }}
         </div>
       </div>
@@ -74,7 +78,11 @@
       <div class="container footer">
         <div class="row contact">
             <p>
+        {% if page.lang == 'ch' %} 
+              布鲁克林<b>/</b>纽约
+        {% else %}
               BROOKLYN <b>/</b> NEW YORK 
+        {% endif  %}
             </p>
             <p>
               wlemasurier@wcoffeeroasters.com

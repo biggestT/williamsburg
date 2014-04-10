@@ -1,10 +1,15 @@
 ---
 layout: coffee
-name: Silamo Korate
 image: coffeebean.jpg
 categories: coffee
-origin: Ethiopia
 code: 87Q
+
+name-ch: 比亚
+origin-ch: 埃塞俄比亚
+text-ch: 这是一个热屁股咖啡豆
+
+name-en: Makwa Peaberry
+origin-en: Ethiopia
+text-en: This is a hot ass coffee bean
 ---
 
-This is a hot ass coffee bean

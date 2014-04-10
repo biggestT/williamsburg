@@ -1,12 +1,12 @@
 ---
 layout: experience
-title: Williamsburg
+title:  Explore Williamsburg!
 lang: en
 ---
 
-#Welcome to Williamsburg
+#Where it all started
 
-##Distributor of single origin coffee to selected venues in Shanghai
+##Our history
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt neque ut mi accumsan, nec tincidunt erat consectetur. Proin consectetur, leo non porttitor porta, orci justo viverra velit, et lobortis risus mauris sed tellus. Vivamus quis quam ut orci egestas mollis. Vivamus non condimentum neque. Suspendisse et elit eleifend, consequat risus et, pretium erat. Nulla vitae imperdiet tortor, vitae rutrum mauris. Curabitur vel feugiat orci.
 
