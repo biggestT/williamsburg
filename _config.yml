@@ -5,7 +5,7 @@ permalink: /:categories/:title
 
 production_url : http://biggestT.github.io/williamsburg
 
-BASE_PATH : false
+BASE_PATH : http://biggestT.github.io/williamsburg
 
 menuitems:
   about:
