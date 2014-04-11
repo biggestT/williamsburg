@@ -7,15 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/libs/bootstrap/css/bootstrap.min.css"/>
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="{{ BASE_PATH }}/css/main.css">
 
         <!-- Jquery JS -->
-        <script src="libs/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <script src="{{ BASE_PATH }}/libs/jquery-1.11.0.min.js" type="text/javascript"></script>
         
         <!-- Bootstrap JS -->
-        <script src="libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{{ BASE_PATH }}/libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -26,9 +26,9 @@
         <div class="navbar-inner">
 
           <div class="language-options">
-            <a href="/index.html">En</a>
+            <a href="{{ BASE_PATH }}/index.html">En</a>
             <b>|</b>
-            <a href="/index-ch.html">中文</a>
+            <a href="{{ BASE_PATH }}/index-ch.html">中文</a>
           </div>
 
           <div class="container">
@@ -37,9 +37,9 @@
               <!-- Logo banner -->
               
               {% if page.lang == 'ch' %} 
-              <a class="brand" href="/index-{{ page.lang }}.html">
+              <a class="brand" href="{{ BASE_PATH }}/index-{{ page.lang }}.html">
                 {% else %}
-              <a class="brand" href="/index.html">
+              <a class="brand" href="{{ BASE_PATH }}/index.html">
               {% endif  %}
                   <img  class="desktop-logo" src="graphic/logotypeHor.svg" type="image/svg+xml"></img>
                   <img class="mobile-logo" src="graphic/logotype.svg"  type="image/svg+xml"></img>
@@ -48,7 +48,7 @@
                 <ul class="nav">
                   {% for menuitem in site.menuitems %}
                   <li>
-                    <a href="/{{ menuitem[1].en }}-{{ page.lang }}.html">
+                    <a href="{{ BASE_PATH }}/{{ menuitem[1].en }}-{{ page.lang }}.html">
                     {% if page.lang == 'ch' %} 
                       {{ menuitem[1].ch }}
                     {% else %}

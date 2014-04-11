@@ -3,6 +3,10 @@ description: Coffee Roasters in Shanghai
 markdown: redcarpet
 permalink: /:categories/:title
 
+production_url : http://biggestT.github.io/williamsburg
+
+BASE_PATH : false
+
 menuitems:
   about:
     en: about
