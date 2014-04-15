@@ -4,7 +4,7 @@ lang: en
 ---
 
 {% for coffee in site.categories['coffee'] %}
-<div class="row coffee-title">
+<div class="row coffee-title en-content">
 	<h1>{{ coffee.name-en }}</h1>
 	<h2>{{ coffee.code }}</h2>
 </div>

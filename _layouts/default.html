@@ -71,9 +71,14 @@
       <!-- Main content area -->
 
       <div class="container content">
-        <div class="row">
+        {% if page.lang == 'ch' %} 
+        <div class="row ch-content">
+        {% else %}
+        <div class="row en-content">
+        {% endif  %}
 
           {{ content }}
+          
         </div>
       </div>
 

@@ -33,20 +33,40 @@ a {
 a:hover {
   text-decoration: none;
 }
-/* HEADERS */
 
+
+/* HEADERS */
 h1, h2, h3 {
-  font-family: 'Birch';
   text-transform: capitalize;
 }
 h1 {
-  font-size: 400%;
   margin: 0px 0px 0px 0px;
 }
 h2 {
-  font-size: 200%;
   color: #ac9166;
   margin: 0px 0px 30px 0px;
+}
+
+/* English header styles */
+.en-content>h1, .en-content>h2 {
+  font-family: 'Birch';
+}
+.en-content>h1 {
+  font-size: 400%;
+}
+.en-content>h2 {
+  font-size: 200%;
+}
+
+/* Chinese header styles */
+.ch-content>h1, .ch-content>h2 {
+  font-family:  "微软雅黑", "Microsoft YaHei",  Tahoma , Verdana , Arial , sans-serif;;
+}
+.ch-content>h1 {
+  font-size: 360%;
+}
+.ch-content>h2 {
+  font-size: 150%;
 }
 
 
@@ -128,6 +148,9 @@ b {
 /* GALLERY */
 ul.coffees {
   list-style: none;
+}
+.coffee-title>h1 {
+  font-size: 190%;
 }
 .coffee-title>h1, .coffee-title>h2 {
   display: inline;

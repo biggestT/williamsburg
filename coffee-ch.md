@@ -4,7 +4,7 @@ lang: ch
 ---
 
 {% for coffee in site.categories['coffee'] %}
-<div class="row coffee-title">
+<div class="row coffee-title ch-content">
 	<h1>{{ coffee.name-ch }}</h1>
 	<h2>{{ coffee.code }}</h2>
 </div>
