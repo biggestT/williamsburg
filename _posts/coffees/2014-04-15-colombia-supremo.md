@@ -2,7 +2,7 @@
 layout: coffee
 image: coffeebean.jpg
 categories: coffee
-code: 82.5Q
+code: 82.5
 
 name-ch: 哥伦比亚Supremo
 origin-ch: 哥伦比亚
