@@ -2,7 +2,7 @@
 layout: coffee
 image: coffeebean.jpg
 categories: coffee
-code: 82QG
+code: 82
 
 name-ch: 危地马拉SHB
 origin-ch: 危地马拉
