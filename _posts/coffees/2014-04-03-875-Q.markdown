@@ -10,7 +10,6 @@ text-ch: 生长着Aberdare山脉里中心地带，这款豆子有着极高的87.
 
 name-en: KENYA Makwa Peaberry
 origin-en: KENYA
-text-en: Grown high in the Aberdare Mountains in the central highlands of Kenya
-KENYA Makwa Peaberry offers coffee lovers a blend of extreme quality with a Q Score of 87.5.  The aroma is floral and has a sweet spice, black currant flavour with hints of lemon and a juicy clean finish to the taste.
+text-en: Grown high in the Aberdare Mountains in the central highlands of Kenya KENYA Makwa Peaberry offers coffee lovers a blend of extreme quality with a Q Score of 87.5.  The aroma is floral and has a sweet spice, black currant flavour with hints of lemon and a juicy clean finish to the taste.
 ---
 
