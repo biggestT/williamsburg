@@ -8,7 +8,7 @@ lang: en
 
 ##Distributor of single origin coffee to selected venues in Shanghai
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt neque ut mi accumsan, nec tincidunt erat consectetur. Proin consectetur, leo non porttitor porta, orci justo viverra velit, et lobortis risus mauris sed tellus. Vivamus quis quam ut orci egestas mollis. Vivamus non condimentum neque. Suspendisse et elit eleifend, consequat risus et, pretium erat. Nulla vitae imperdiet tortor, vitae rutrum mauris. Curabitur vel feugiat orci.
+KEVIN IS FUCKING AWESOME!!!
 
 Nunc quis augue quis urna congue tempus a a diam. In fermentum ac velit vel vestibulum. Ut at sagittis nisi. Suspendisse eget neque eros. Quisque ac posuere massa. Nullam faucibus, libero sit amet sollicitudin sodales, nisl orci gravida dui, id pretium velit velit tincidunt metus. Aenean sed mauris sed velit rutrum bibendum pellentesque vitae libero. Morbi a blandit tortor, ut varius augue. Phasellus semper sapien vitae diam feugiat, at lacinia magna imperdiet. Curabitur pretium nisi est, quis dignissim tortor volutpat eget. Fusce elementum urna a tortor dignissim facilisis.
 
