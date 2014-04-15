@@ -4,7 +4,7 @@ image: coffeebean.jpg
 categories: coffee
 code: 86Q
 
-name-ch: 危地马拉圣塔付丽萨Typica
+name-ch: 圣塔付丽萨
 origin-ch: 危地马拉
 text-ch: 这款咖啡豆的味道非常的独特。当地的生长环境使这种咖啡豆的成熟期比较缓慢，所以成熟的果实积累了更丰富的风味：黑巧克力、红苹果、樱桃、葡萄等。浓厚的口感更使这款咖啡豆成为世界上口味最丰富的豆子之一。
 
