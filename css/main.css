@@ -37,6 +37,7 @@ a:hover {
 
 /* HEADERS */
 h1, h2, h3 {
+  color: white;
   text-transform: capitalize;
 }
 h1 {
@@ -48,24 +49,24 @@ h2 {
 }
 
 /* English header styles */
-.en-content>h1, .en-content>h2 {
+.en-content h1, .en-content h2 {
   font-family: 'Birch';
 }
-.en-content>h1 {
+.en-content h1 {
   font-size: 400%;
 }
-.en-content>h2 {
+.en-content h2 {
   font-size: 200%;
 }
 
 /* Chinese header styles */
-.ch-content>h1, .ch-content>h2 {
+.ch-content h1, .ch-content h2 {
   font-family:  "微软雅黑", "Microsoft YaHei",  Tahoma , Verdana , Arial , sans-serif;;
 }
-.ch-content>h1 {
+.ch-content h1 {
   font-size: 360%;
 }
-.ch-content>h2 {
+.ch-content h2 {
   font-size: 150%;
 }
 
@@ -127,7 +128,7 @@ h2 {
 .container {
   min-height: 100%;
   margin-left: 10%;
-  width: 40%;
+  /*width: 40%;*/
 }
 .content {
   margin-top: 80px;
@@ -149,14 +150,29 @@ b {
 ul.coffees {
   list-style: none;
 }
-.coffee-title>h1 {
-  font-size: 190%;
+.caption>h1 {
+  font-size: 300%;
+  margin-bottom: 20px;
 }
-.coffee-title>h1, .coffee-title>h2 {
+.caption>h2 {
+  font-size: 150%;
   display: inline;
+  margin: 20px 20px 20px 0px;
+}
+.coffee-image {
+  margin-bottom: 20px;
 }
 .coffee-content {
+  background-color: black;
+  border: 1px solid #272727;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
   margin-bottom: 40px;
+}
+.caption>p{
+  color: white;
+  margin-top: 20px;
 }
 
 /* MOBILE DEVICES */

@@ -4,21 +4,22 @@ lang: ch
 ---
 
 {% for coffee in site.categories['coffee'] %}
-<div class="row coffee-title ch-content">
-	<h1>{{ coffee.name-ch }}</h1>
-	<h2>{{ coffee.code }}</h2>
-</div>
 <div class="row coffee-content">
-	<div class="col-lg-6 col-xs-6 coffee-image">
-		<img class="img-responsive coffee-image" src="images/{{ coffee.image }}"></img>
-	</div>
-	<div class="col-lg-6 col-xs-6">
-		<p>
-			Origin:
-			<b>{{ coffee.origin-ch }}</b>  
-		</p>
-		<p>{{ coffee.text-ch }}</p>
-	</div>
+    	<div class="col-lg-6 col-sm-12 coffee-image">
+    		<img class="img-responsive" src="images/{{ coffee.image }}" alt="...">
+    	</div>
+    	<div class="col-lg-6 col-sm-12">
+    		<div class="caption en-content">
+    			<h1>{{ coffee.name-ch }}</h1>
+    			<h2>
+    				<span class="glyphicon glyphicon-certificate"></span> {{ coffee.code }} 
+    			</h2>
+    			<h2>
+    				<span class="glyphicon glyphicon-globe"></span> {{ coffee.origin-ch }} 
+    			</h2>
+    			<p>{{ coffee.text-ch }}</p>
+    		</div>
+    	</div>
 </div>
 
 {% endfor %}
