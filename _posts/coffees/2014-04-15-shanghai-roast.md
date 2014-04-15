@@ -2,7 +2,7 @@
 layout: coffee
 image: coffeebean.jpg
 categories: coffee
-code: SHBLEND
+code: 82
 
 name-ch: 味炼上海范意式浓缩拼配
 origin-ch: 洪都拉斯、哥伦比亚、危地马拉
