@@ -4,9 +4,9 @@ title: Williamsburg
 lang: en
 ---
 
-#Buy A Williamsblend
+#How to Buy
 
-##Use Wechat to start buying our coffee
+##wechat, taobao shop, or the amazing monthly coffee box!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt neque ut mi accumsan, nec tincidunt erat consectetur. Proin consectetur, leo non porttitor porta, orci justo viverra velit, et lobortis risus mauris sed tellus. Vivamus quis quam ut orci egestas mollis. Vivamus non condimentum neque. Suspendisse et elit eleifend, consequat risus et, pretium erat. Nulla vitae imperdiet tortor, vitae rutrum mauris. Curabitur vel feugiat orci.
 

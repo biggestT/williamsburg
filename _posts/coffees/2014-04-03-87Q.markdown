@@ -2,7 +2,7 @@
 layout: coffee
 image: coffeebean.jpg
 categories: coffee
-code: 87Q Ethi
+code: 87
 
 name-ch: 埃塞尔比亚 西达摩
 origin-ch: 埃塞俄比亚
