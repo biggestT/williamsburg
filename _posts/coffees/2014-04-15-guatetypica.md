@@ -2,7 +2,7 @@
 layout: coffee
 image: coffeebean.jpg
 categories: coffee
-code: 86Q
+code: 86
 
 name-ch: 圣塔付丽萨
 origin-ch: 危地马拉
