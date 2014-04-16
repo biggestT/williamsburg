@@ -1,6 +1,6 @@
 ---
 layout: coffee
-image: DSC03090.JPG
+image: coffeebean.jpg
 categories: coffee
 code: 87.5
 cid: 1
