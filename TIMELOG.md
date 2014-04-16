@@ -5,5 +5,6 @@
 * 2014-04-09 integrated photoshop files 4 hrs 2 min
 * 2014-04-10 bilingual functionality and minor adjustments 4 hrs 15 min
 * 2014-04-11 dynamic menu items to work with translation 1 hrs 42 min
+* 2014-04-15 changed layout of coffee gallery and added content with kevZ 2 hrs 9 min
 
-### Total time spent: 19 hours and 31 minutes 
+### Total time spent: 21 hours and 40 minutes 

@@ -2,22 +2,25 @@
 layout: default
 lang: en
 ---
-
-<div class="row coffee-side padded">
-    <!-- <div class="container"> -->
-        {% for coffee in site.categories['coffee'] %}
-        <li>
-            <a href="#{{ coffee.cid }}"> {{ coffee.name-en }} </a>
-            <!-- <b> / </b> -->
-        </li>
-        {% endfor %}
-    <!-- </div> -->
+<div id="coffee-nav" class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner">
+        <div class="row">
+            <div class="container">
+                {% for coffee in site.categories['coffee'] %}
+                <li>
+                    <a href="#{{ coffee.cid }}"> {{ coffee.name-en }} </a>
+                    <!-- <b> / </b> -->
+                </li>
+                {% endfor %}
+            </div>
+        </div>
+</div>
 </div>
 
 
 {% for coffee in site.categories['coffee'] %}
 
-<div class="row coffee-content padded">
+<div class="row coffee-content">
     <div class="col-lg-12 coffee-title">
         <a id="{{ coffee.cid }}" class="coffee-anchor">
             <h1>{{ coffee.name-en }}</h1>

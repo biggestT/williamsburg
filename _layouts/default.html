@@ -19,6 +19,8 @@
         <!-- Bootstrap JS -->
         <script src="{{ BASE_PATH }}/libs/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 
+        <!-- Custom js --> 
+        <script src="{{ BASE_PATH }}/scripts/williamsburg.js" type="text/javascript"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -29,7 +31,7 @@
 
           <div class="language-options">
             <a href="{{ BASE_PATH }}/index.html">En</a>
-            <b>|</b>
+            <b>/</b>
             <a href="{{ BASE_PATH }}/index-ch.html">中文</a>
           </div>
 
@@ -43,8 +45,8 @@
                 {% else %}
               <a class="brand" href="{{ BASE_PATH }}/index.html">
               {% endif  %}
-                  <img  class="desktop-logo" src="graphic/logotypeHor.svg" type="image/svg+xml"></img>
-                  <img class="mobile-logo" src="graphic/logotype.svg"  type="image/svg+xml"></img>
+                  <img  class="logo" src="graphic/logo.svg" type="image/svg+xml"></img>
+                  <img class="logo-text" src="graphic/logotext.svg"  type="image/svg+xml"></img>
               </a>
               <div>
                 <ul class="nav">
@@ -82,24 +84,27 @@
         </div>
       </div>
 
-      <div class="container footer">
-        <div class="row contact">
-            <p>
-        {% if page.lang == 'ch' %} 
-              布鲁克林<b>/</b>纽约
-        {% else %}
-              BROOKLYN <b>/</b> NEW YORK 
-        {% endif  %}
-            </p>
-            <p>
-              wlemasurier@wcoffeeroasters.com
-            </p>
-        </div>
-        <div class="row contact">
-          <p>
-            <a href="https://github.com/yourusername">weibo</a><br />
-            <a href="https://twitter.com/yourusername">wechat</a><br />
-          </p>
+      <div class="navbar navbar-fixed-bottom">
+        <div class="navbar-inner">
+          <div class="container footer">
+            <div class="row contact">
+              <p>
+                {% if page.lang == 'ch' %} 
+                布鲁克林<b>/</b>纽约
+                {% else %}
+                BROOKLYN <b>/</b> NEW YORK 
+                {% endif  %}
+              </p>
+              <p>
+                Contact: wlemasurier@wcoffeeroasters.com
+              </p>
+              <p>
+                <a href="https://github.com/yourusername">weibo</a>
+                <b> / </b>
+                <a href="https://twitter.com/yourusername">wechat</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
