@@ -10,8 +10,8 @@
 body {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #4c1200;
-  background: url(../graphic/background.jpg) no-repeat center center fixed; 
+  background-color: #16082B;
+  background: -webkit-radial-gradient(#5b0061, #161313);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -123,7 +123,6 @@ h2 {
 
 .container {
   min-height: 100%;
-  margin-left: 10%;
 }
 /* FOOTER */ 
 .navbar-fixed-bottom {
@@ -145,25 +144,24 @@ b {
   left: 60%;
 }
 .coffee-side {
-  position: fixed;
-  top: 0px;
-  left: 80%;
   list-style: none;
-  padding: 100px 30px;
-  height: 100%;
+  top: 80px;
+  width: 263px;
 }
 
-ul.coffees {
+ul {
   list-style: none;
 }
 .coffee-title {
   margin-bottom: 20px;
 }
-.coffee-title h1 {
+.coffee-content h1 {
   font-size: 300%;
+  /*font-family: 'Gotham Round';*/
 }
-.coffee-title h2 {
-  font-size: 150%;
+.coffee-content h2 {
+  font-size: 100%;
+  font-family: 'Gotham Round';
   display: inline;
   margin: 20px 20px 20px 0px;
 }
@@ -172,14 +170,12 @@ ul.coffees {
 }
 .padded {
   background-color: black;
-  border: 1px solid #272727;
-  border-radius: 15px;
+  /* border-bottom: 1px solid #272727; */
 }
 .coffee-content {
-  padding: 10px;
-  margin-top: 20px;
-  width: 70%;
-  margin-bottom: 40px;
+  padding: 10px ;
+  min-height: 90vh;
+  
 }
 .caption>p{
   color: white;
@@ -187,7 +183,7 @@ ul.coffees {
 
 /* MOBILE DEVICES */
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .logo-text, .coffee-side {
     visibility: hidden;
     width: 0;
