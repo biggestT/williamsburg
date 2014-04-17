@@ -2,32 +2,27 @@
 layout: default
 ---
 
-{% assign coffees = site.categories['coffee'] %}
+{% assign slides = site.categories['education'] %}
 
-{% for coffee in coffees%}
+{% for slide in slides %}
 
 {% case page.lang %}
 	{% when 'en' %}
-	{% assign name = coffee.name-en %}
-	{% assign origin = coffee.origin-en %}
-	{% assign text = coffee.text-en %}
+	{% assign name = slide.name-en %}
+    {% assign text = slide.text-en %}
+	{% assign tagline = slide.tagline-en %}
 	{% when 'ch' %}
-	{% assign name = coffee.name-ch %}
-	{% assign origin = coffee.origin-ch %}
-	{% assign text = coffee.text-ch %}
+	{% assign name = slide.name-ch %}
+    {% assign text = slide.text-ch %}
+	{% assign tagline = slide.tagline-ch %}
 {% endcase %}
 
 <div class="col-md-9 col-sm-9">
     <div class="row category-content padded">
-        <div class="col-xs-12 coffee-title">
+        <div class="col-xs-12 category-title">
             <a id="{{ forloop.index }}" class="category-anchor">
                 <h1>{{ name }}</h1>
-                <h2>
-                    <span class="glyphicon glyphicon-certificate"></span> {{ coffee.code }} 
-                </h2>
-                <h2>
-                    <span class="glyphicon glyphicon-globe"></span> {{ origin }} 
-                </h2>
+                <!-- <h2>{{ tagline }}</h2> -->
             </a>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12">
@@ -36,7 +31,7 @@ layout: default
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12 category-image">
-            <img class="img-responsive" src="images/coffee/{{ coffee.image }}" alt="...">
+            <img class="img-responsive" src="images/education/{{ slide.image }}" alt="...">
         </div>
     </div>
 </div>
@@ -45,12 +40,12 @@ layout: default
 <div class="col-md-3 col-sm-3">
     <div class="affix category-side padded" role="complementary">
         <ul>
-            {% for coffee in coffees %}
+            {% for slide in slides %}
             {% case page.lang %}
             {% when 'en' %}
-            {% assign name = coffee.name-en %}
+            {% assign name = slide.name-en %}
             {% when 'ch' %}
-            {% assign name = coffee.name-ch %}
+            {% assign name = slide.name-ch %}
             {% endcase %}
             <li>
             	<a href="#{{ forloop.index }}"> {{ name }} </a>

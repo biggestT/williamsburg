@@ -14,11 +14,15 @@ menuitems:
   coffee:
     en: coffee
     ch: 咖啡
+  education:
+    en: tips
+    ch: 教育
   buy:
     en: buy
     ch: 买
   news:
     en: news
     ch: 新闻
+
 
 

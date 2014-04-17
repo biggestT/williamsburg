@@ -161,11 +161,11 @@ b {
 }
 
 /* GALLERY */
-#coffee-nav {
+.category-nav {
   top: 80px;
   left: 60%;
 }
-.coffee-side {
+.category-side {
   list-style: none;
   top: 80px;
   width: 263px;
@@ -174,20 +174,20 @@ b {
 ul {
   list-style: none;
 }
-.coffee-title {
+.category-title {
   margin-bottom: 20px;
 }
-.coffee-content h1 {
+.category-content h1 {
   font-size: 300%;
   /*font-family: 'Gotham Round';*/
 }
-.coffee-content h2 {
+.category-content h2 {
   font-size: 100%;
   font-family: 'Gotham Round';
   display: inline;
   margin: 20px 20px 20px 0px;
 }
-.coffee-image {
+.category-image {
   margin-bottom: 20px;
 }
 .padded {
@@ -197,8 +197,9 @@ ul {
   background-color: black;
   padding: 20px;
 }
-.coffee-content {
+.category-content {
   /* padding: 10px ; */
+  margin-top: 20px;
   min-height: 90vh;
   
 }
@@ -209,7 +210,7 @@ ul {
 /* MOBILE DEVICES */
 
 @media (max-width: 768px) {
-  .logo-text, .coffee-side {
+  .logo-text, .category-side {
     visibility: hidden;
     width: 0;
     height: 0;
@@ -223,23 +224,22 @@ ul {
   .navbar-fixed-bottom {
     padding-top: 10px;
   }
-  .coffee-nav {
+  .category-nav {
     top: 70px;
   }
   .logo {
     height: auto;
     width: 40px;
   }
-  .coffee-content {
+  .category-content {
   }
   body {
     background-color: rgb(49, 32, 0);
-  background: -webkit-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
-  background: -moz-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
-  background: -o-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
-  background: -ms-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
-  background: linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
-    background-size: 10px;
+ /* background: url(../graphic/background1mod.svg) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
     padding-top: 80px;
     min-width: 200px;
     font-size: 11px;
