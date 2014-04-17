@@ -8,12 +8,18 @@
 }
 
 html {
-  background: -webkit-radial-gradient(#5b0061, #161313);
+  background-color: rgb(49, 32, 0);
+  background: -webkit-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: -moz-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: -o-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background-size: 120xpx;
 }
 body {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #16082B;
+  background-color: rgb(49, 32, 0);
   background: url(../graphic/background1mod.svg) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,7 +33,7 @@ body {
 }
 
 .page {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 50px;
 }
 #foreground {
@@ -41,7 +47,9 @@ body {
 p>img {
   display: block;
   width: 100%;
-  margin: auto;
+  overflow: hidden;
+  float: right;
+  margin: 0px 0px 10px 20px;
 }
 a {
   color: #FFF;
@@ -185,7 +193,7 @@ ul {
 }
 .padded {
   background-color: black;
-  /* border-bottom: 1px solid #272727; */
+  /* border-bottom: 1px solid #272727; */;
 }
 .coffee-content {
   padding: 10px ;
@@ -221,9 +229,13 @@ ul {
     width: 100%;
   }
   body {
-    background: -webkit-radial-gradient(#4c1200, #4c0800); /* For Safari 5.1 to 6.0 */
-    background: -webkit-radial-gradient(#5b0061, #161313); /* For Safari 5.1 to 6.0 */
-    background: -moz-radial-gradient(#5b0061, #161313); /* For Safari 5.1 to 6.0 */
+    background-color: rgb(49, 32, 0);
+  background: -webkit-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: -moz-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: -o-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+  background: linear-gradient(left, rgba(49, 32, 0, 1) 0%, rgba(68, 53, 12, 1) 1%, rgba(65, 52, 18, 1) 2%, rgba(46, 35, 5, 1) 24%, rgba(48, 32, 3, 1) 25%, rgba(54, 42, 9, 1) 48%, rgba(54, 37, 5, 1) 49%, rgba(56, 39, 5, 1) 52%, rgba(59, 40, 3, 1) 53%, rgba(65, 44, 3, 1) 54%, rgba(70, 50, 13, 1) 55%, rgba(51, 37, 11, 1) 56%, rgba(49, 35, 9, 1) 57%, rgba(24, 17, 3, 1) 58%, rgba(32, 21, 1, 1) 73%, rgba(41, 27, 1, 1) 74%, rgba(65, 37, 1, 1) 98%, rgba(66, 40, 0, 1) 100%);
+    background-size: 10px;
     padding-top: 80px;
     min-width: 200px;
     font-size: 11px;
