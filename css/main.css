@@ -17,7 +17,7 @@ html {
   background-size: 120xpx;
 }
 body {
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 120px;
   background-color: rgb(49, 32, 0);
   background: url(../graphic/background1mod.svg) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
@@ -39,18 +39,16 @@ body {
 #foreground {
   position: fixed;
   width: 100vw;
-  /* height: 100vh; */
   top: 0px;
-  /* height: 50%; */
-  /* left: 10px; */
 }
 p>img {
   display: block;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   float: right;
   margin: 0px 0px 10px 20px;
 }
+
 a {
   color: #FFF;
 }
@@ -143,7 +141,8 @@ h2 {
 }
 
 /* CONTENT */ 
-
+.content {
+}
 .container {
   min-height: 100%;
 }
@@ -192,16 +191,19 @@ ul {
   margin-bottom: 20px;
 }
 .padded {
-  background-color: black;
+  /* background-color: rgb(199, 199, 199); */
   /* border-bottom: 1px solid #272727; */;
+  background-color: #bd261a;
+  background-color: black;
+  padding: 20px;
 }
 .coffee-content {
-  padding: 10px ;
+  /* padding: 10px ; */
   min-height: 90vh;
   
 }
 .caption>p{
-  color: white;
+  /* color: white; */
 }
 
 /* MOBILE DEVICES */
@@ -215,6 +217,9 @@ ul {
   .navbar-fixed-bottom, .navbar {
     max-height: 60px;
   }
+  .padded {
+    padding: 10px;
+  }
   .navbar-fixed-bottom {
     padding-top: 10px;
   }
@@ -226,7 +231,6 @@ ul {
     width: 40px;
   }
   .coffee-content {
-    width: 100%;
   }
   body {
     background-color: rgb(49, 32, 0);
