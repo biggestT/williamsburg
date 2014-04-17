@@ -1,6 +1,6 @@
 ---
 layout: coffee
-image: coffeebean.jpg
+image: ColombiaSepremo.jpg
 categories: coffee
 code: 82.5
 cid: 3

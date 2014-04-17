@@ -1,6 +1,6 @@
 ---
 layout: coffee
-image: coffeebean.jpg
+image: GuatamalaSantaFelisa.jpg
 categories: coffee
 code: 86
 cid: 6

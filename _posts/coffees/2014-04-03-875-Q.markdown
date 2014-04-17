@@ -1,9 +1,11 @@
 ---
 layout: coffee
-image: coffeebean.jpg
+image: KenyaMakwa.jpg
 categories: coffee
 code: 87.5
 cid: 1
+
+name: bla 
 
 name-ch: 肯尼亚马卡瓦圆豆
 origin-ch: 肯尼亚

@@ -1,6 +1,6 @@
 ---
 layout: coffee
-image: coffeebean.jpg
+image: Guatemala.jpg
 categories: coffee
 code: 82
 cid: 5

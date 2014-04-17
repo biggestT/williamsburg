@@ -7,11 +7,14 @@
   src: url('../libs/fonts/BirchStd.otf');
 }
 
+html {
+  background: -webkit-radial-gradient(#5b0061, #161313);
+}
 body {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #16082B;
-  background: -webkit-radial-gradient(#5b0061, #161313);
+  background: url(../graphic/background1mod.svg) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,6 +26,18 @@ body {
   text-align: left;
 }
 
+.page {
+  height: 100vh;
+  padding-top: 50px;
+}
+#foreground {
+  position: fixed;
+  width: 100vw;
+  /* height: 100vh; */
+  top: 0px;
+  /* height: 50%; */
+  /* left: 10px; */
+}
 p>img {
   display: block;
   width: 100%;
