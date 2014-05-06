@@ -37,7 +37,7 @@ layout: default
 </div>
 {% endfor %}
 
-<div class="col-md-3 col-sm-3">
+<div class="col-md-3 col-xs-1">
     <div class="affix category-side padded light-background" role="complementary">
         <ul>
             {% for slide in slides %}
@@ -48,7 +48,8 @@ layout: default
             {% assign name = slide.name-ch %}
             {% endcase %}
             <li>
-            	<a href="#{{ forloop.index }}"> {{ name }} </a>
+            	<a href="#{{ forloop.index }}" class="long-menu-item"> {{ name }} </a>
+                <a href="#{{ forloop.index }}" class="short-menu-item"> {{ forloop.index }} </a>
             </li>
             {% endfor %}
         </ul>

@@ -30,7 +30,7 @@ body {
 
 .page {
   min-height: 100vh;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 #foreground {
   position: fixed;
@@ -99,9 +99,13 @@ h2 {
 .logo, .logo-text {
   height: 30px;
 }
-.navbar, .navbar-collapse {
+.navbar, .navbar-collapse, .category-side, .category-top {
   background-color: rgba(0, 0, 0, 0);
   background: -webkit-linear-gradient(#020202, #353434);
+}
+.category-side li {
+  margin-bottom: 10px;
+  /* float: left; */
 }
 .navbar-lang {
     float: right;
@@ -142,7 +146,6 @@ h2 {
 }
 /* FOOTER */ 
 .navbar-fixed-bottom {
-  /* border-top: 1px solid #272727; */
   max-height: 100px;
   padding-top: 20px;
 }
@@ -155,18 +158,25 @@ b {
 }
 
 /* GALLERY */
-.category-nav {
-  top: 80px;
-  left: 60%;
-}
-.category-side {
+.category-side, .category-top {
   list-style: none;
+  border-radius: 50px;
+}
+.category-side ul {
+  padding: 40px 0px;
   top: 80px;
-  width: 263px;
+  min-height: 70vh;
+  padding:  20px 20px;
+}
+.category-top {
+  min-width: 90vw;
+  display: none;
+  top: 60px;
 }
 
 ul {
   list-style: none;
+  /* padding: 10px; */
 }
 .category-title {
   margin-bottom: 20px;
@@ -193,7 +203,7 @@ ul {
   /* background-color: white; */
 }
 .light-background a{
-  color: black;
+  /* color: black; */
 }
 .category-content {
   /* padding: 10px ; */
@@ -219,25 +229,23 @@ ul {
 }
 .coffee-image {
   min-height: inherit;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 .caption>p{
-  color: black;
+  /* color: black; */
 }
 
 /* MOBILE DEVICES */
 
 @media (max-width: 768px) {
   .logo-text, .category-side {
-    visibility: hidden;
-    width: 0;
     height: 0;
   }
   .navbar-fixed-bottom, .navbar {
     max-height: 60px;
   }
   .padded {
-    padding: 10px;
+    /* padding: 0px; */
   }
   .navbar-fixed-bottom {
     padding-top: 10px;
@@ -251,6 +259,18 @@ ul {
   }
   .category-content {
   }
+  .category-top {
+  display: block;
+  top: 55px;
+}
+.category-top li {
+  float: left;
+  margin-right: 20px;
+  padding: 10px 0px;
+}
+.category-side {
+  display: none;
+}
   html {
   /* background-color: rgb(49, 32, 0); */
 }
@@ -261,7 +281,7 @@ ul {
     text-align: left;
   }
   .container {
-    width: 80%;
+    width: 90%;
   }
   .nav {
   }
@@ -269,6 +289,6 @@ ul {
 
   }
   .navbar {
-
+    /* margin-bottom: 50px; */
   }
 }

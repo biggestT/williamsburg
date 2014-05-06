@@ -4,7 +4,7 @@ layout: default
 
 {% assign coffees = site.categories['coffee'] %}
 
-<div class="col-md-9 col-xs-9 category-content padded">
+<div class="col-md-9 col-xs-12 category-content padded">
 {% for coffee in coffees%}
 
 {% case page.lang %}
@@ -47,8 +47,10 @@ layout: default
 </div>
 {% endfor %}
 </div>
-<div class="col-md-3 col-sm-3">
-    <div class="affix category-side padded light-background" role="complementary">
+
+<!-- side menu for bigger screens -->
+<div class="col-md-3 col-xs-1">
+    <div class="affix category-menu category-side padded light-background" role="complementary">
         <ul>
             {% for coffee in coffees %}
             {% case page.lang %}
@@ -58,9 +60,28 @@ layout: default
             {% assign name = coffee.name-ch %}
             {% endcase %}
             <li>
-            	<a href="#{{ forloop.index }}" data-image="{{ coffee.image }}"> {{ name }} </a>
+                <a href="#{{ forloop.index }}" class="long-menu-item"> {{ name }} </a>
             </li>
             {% endfor %}
         </ul>
     </div>
+</div>
+
+<!-- minimal top menu smaller screens -->
+<div class="affix category-menu category-top padded light-background" role="complementary">
+    <ul>
+        <li>
+            {% case page.lang %}
+            {% when 'en' %}
+            Coffees: 
+            {% when 'ch' %}
+            咖啡号: 
+            {% endcase %}
+        </li>
+        {% for coffee in coffees %}
+        <li>
+            <a href="#{{ forloop.index }}" class="short-menu-item"> {{ forloop.index }} </a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
