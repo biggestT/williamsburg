@@ -4,22 +4,23 @@ layout: default
 
 {% assign coffees = site.categories['coffee'] %}
 
+<div class="col-md-9 col-xs-9 category-content padded">
 {% for coffee in coffees%}
 
 {% case page.lang %}
-	{% when 'en' %}
-	{% assign name = coffee.name-en %}
-	{% assign origin = coffee.origin-en %}
-	{% assign text = coffee.text-en %}
-	{% when 'ch' %}
-	{% assign name = coffee.name-ch %}
-	{% assign origin = coffee.origin-ch %}
-	{% assign text = coffee.text-ch %}
+    {% when 'en' %}
+    {% assign name = coffee.name-en %}
+    {% assign origin = coffee.origin-en %}
+    {% assign text = coffee.text-en %}
+    {% when 'ch' %}
+    {% assign name = coffee.name-ch %}
+    {% assign origin = coffee.origin-ch %}
+    {% assign text = coffee.text-ch %}
 {% endcase %}
 
-<div class="col-md-9 col-sm-9">
-    <div class="row category-content padded">
-        <div class="col-xs-12 coffee-title">
+  <div class="row coffee-entry">
+    <div class="col-md-6 col-xs-12 caption">
+      <div class="row coffee-title">
             <a id="{{ forloop.index }}" class="category-anchor">
                 <h1>{{ name }}</h1>
                 <h2>
@@ -29,21 +30,25 @@ layout: default
                     <span class="glyphicon glyphicon-globe"></span> {{ origin }} 
                 </h2>
             </a>
-        </div>
-        <div class="col-lg-6 col-md-6 col-xs-12">
-            <div class="caption en-content">
+       
+    </div>
+    <div class="row coffee-text">
+       
+            <div class="en-content">
                 <p>{{ text }}</p>
             </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-xs-12 category-image">
-            <img class="img-responsive" src="images/coffee/{{ coffee.image }}" alt="...">
-        </div>
+       
     </div>
+    </div>
+    <div class="col-md-6 col-xs-12 coffee-image"
+    style="background: url(images/coffee/{{ coffee.image }}) no-repeat center center fixed;">
+    </div>
+
 </div>
 {% endfor %}
-
+</div>
 <div class="col-md-3 col-sm-3">
-    <div class="affix category-side padded" role="complementary">
+    <div class="affix category-side padded light-background" role="complementary">
         <ul>
             {% for coffee in coffees %}
             {% case page.lang %}
@@ -53,7 +58,7 @@ layout: default
             {% assign name = coffee.name-ch %}
             {% endcase %}
             <li>
-            	<a href="#{{ forloop.index }}"> {{ name }} </a>
+            	<a href="#{{ forloop.index }}" data-image="{{ coffee.image }}"> {{ name }} </a>
             </li>
             {% endfor %}
         </ul>

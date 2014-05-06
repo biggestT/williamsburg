@@ -7,5 +7,6 @@
 * 2014-04-11 dynamic menu items to work with translation 1 hrs 42 min
 * 2014-04-15 changed layout of coffee gallery and added content with kevZ 2 hrs 9 min
 * 2014-04-16 coffee menu 6 hrs 40 min
+* 2014-04-17 added education section and changed background etc. 4 hrs 54 min
 
-### Total time spent: 28 hours and 20 minutes 
+### Total time spent: 33 hours and 14 minutes 

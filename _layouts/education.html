@@ -18,7 +18,7 @@ layout: default
 {% endcase %}
 
 <div class="col-md-9 col-sm-9">
-    <div class="row category-content padded">
+    <div class="row category-content padded light-background">
         <div class="col-xs-12 category-title">
             <a id="{{ forloop.index }}" class="category-anchor">
                 <h1>{{ name }}</h1>
@@ -38,7 +38,7 @@ layout: default
 {% endfor %}
 
 <div class="col-md-3 col-sm-3">
-    <div class="affix category-side padded" role="complementary">
+    <div class="affix category-side padded light-background" role="complementary">
         <ul>
             {% for slide in slides %}
             {% case page.lang %}
