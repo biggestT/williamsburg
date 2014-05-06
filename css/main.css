@@ -160,7 +160,6 @@ b {
 /* GALLERY */
 .category-side, .category-top {
   list-style: none;
-  border-radius: 50px;
 }
 .category-side ul {
   padding: 40px 0px;
@@ -214,15 +213,15 @@ ul {
   width: 100vw;
 }
 .coffee-entry{
-  min-height: 70vh;
-  margin-bottom: 40px;
+  min-height: 90vh;
+  /* margin-bottom: 40px; */
   /* background-color: white; */
 }
-.coffee-title {
+.coffee-title h2, .coffee-text {
   margin-bottom: 20px;
 }
 .coffee-text, .coffee-title{
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 .caption {
   /* padding: 0px 20px; */

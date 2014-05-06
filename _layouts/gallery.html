@@ -19,31 +19,25 @@ layout: default
 {% endcase %}
 
   <div class="row coffee-entry">
-    <div class="col-md-6 col-xs-12 caption">
-      <div class="row coffee-title">
-            <a id="{{ forloop.index }}" class="category-anchor">
-                <h1>{{ name }}</h1>
-                <h2>
-                    <span class="glyphicon glyphicon-certificate"></span> {{ coffee.code }} 
-                </h2>
-                <h2>
-                    <span class="glyphicon glyphicon-globe"></span> {{ origin }} 
-                </h2>
-            </a>
-       
+    <div class="col-xs-12 category-title">
+        <a id="{{ forloop.index }}" class="category-anchor">
+            <h1>{{ name }}</h1>
+            <h2>
+                <span class="glyphicon glyphicon-certificate"></span> {{ coffee.code }} 
+            </h2>
+            <h2>
+                <span class="glyphicon glyphicon-globe"></span> {{ origin }} 
+            </h2>
+        </a>
     </div>
-    <div class="row coffee-text">
-       
-            <div class="en-content">
-                <p>{{ text }}</p>
-            </div>
-       
+    <div class="col-sm-6 col-xs-12">
+        <div class="caption en-content">
+            <p>{{ text }}</p>
+        </div>
     </div>
+    <div class="col-sm-6 col-xs-12 category-image">
+        <img class="img-responsive" src="images/coffee/{{ coffee.image }}" alt="...">
     </div>
-    <div class="col-md-6 col-xs-12 coffee-image"
-    style="background: url(images/coffee/{{ coffee.image }}) no-repeat center center fixed;">
-    </div>
-
 </div>
 {% endfor %}
 </div>
