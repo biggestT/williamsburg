@@ -2,80 +2,67 @@
 layout: default
 ---
 
-{% assign coffees = site.categories['coffee'] %}
+{% assign slides = site.categories['coffee'] %}
 
-<div class="col-md-9 col-xs-12 category-content padded">
-{% for coffee in coffees%}
+<div class="col-sm-11 col-xs-12 category-content padded">
+{% for slide in slides%}
 
 {% case page.lang %}
-    {% when 'en' %}
-    {% assign name = coffee.name-en %}
-    {% assign origin = coffee.origin-en %}
-    {% assign text = coffee.text-en %}
-    {% when 'ch' %}
-    {% assign name = coffee.name-ch %}
-    {% assign origin = coffee.origin-ch %}
-    {% assign text = coffee.text-ch %}
+		{% when 'en' %}
+		{% assign name = slide.name-en %}
+		{% assign origin = slide.origin-en %}
+		{% assign text = slide.text-en %}
+		{% when 'ch' %}
+		{% assign name = slide.name-ch %}
+		{% assign origin = slide.origin-ch %}
+		{% assign text = slide.text-ch %}
 {% endcase %}
 
-  <div class="row coffee-entry">
-    <div class="col-xs-12 category-title">
-        <a id="{{ forloop.index }}" class="category-anchor">
-            <h1>{{ name }}</h1>
-            <h2>
-                <span class="glyphicon glyphicon-certificate"></span> {{ coffee.code }} 
-            </h2>
-            <h2>
-                <span class="glyphicon glyphicon-globe"></span> {{ origin }} 
-            </h2>
-        </a>
-    </div>
-    <div class="col-sm-6 col-xs-12">
-        <div class="caption en-content">
-            <p>{{ text }}</p>
-        </div>
-    </div>
-    <div class="col-sm-6 col-xs-12 category-image">
-        <img class="img-responsive" src="images/coffee/{{ coffee.image }}" alt="...">
-    </div>
+	<div class="row coffee-entry">
+		<div class="col-xs-12 category-title">
+				<a id="{{ forloop.index }}" class="category-anchor">
+						<h1>{{ name }}</h1>
+						<h2>
+								<span class="glyphicon glyphicon-certificate"></span> {{ slide.code }} 
+						</h2>
+						<h2>
+								<span class="glyphicon glyphicon-globe"></span> {{ origin }} 
+						</h2>
+				</a>
+		</div>
+		<div class="col-sm-6 col-xs-12">
+				<div class="caption en-content">
+						<p>{{ text }}</p>
+				</div>
+		</div>
+		<div class="col-sm-6 col-xs-12 category-image">
+				<img class="img-responsive" src="images/coffee/{{ slide.image }}" alt="...">
+		</div>
 </div>
 {% endfor %}
 </div>
 
-<!-- side menu for bigger screens -->
-<div class="col-md-3 col-xs-1">
-    <div class="affix category-menu category-side padded light-background" role="complementary">
-        <ul>
-            {% for coffee in coffees %}
-            {% case page.lang %}
-            {% when 'en' %}
-            {% assign name = coffee.name-en %}
-            {% when 'ch' %}
-            {% assign name = coffee.name-ch %}
-            {% endcase %}
-            <li>
-                <a href="#{{ forloop.index }}" class="long-menu-item"> {{ name }} </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
-
-<!-- minimal top menu smaller screens -->
-<div class="affix category-menu category-top padded light-background" role="complementary">
-    <ul>
-        <li>
-            {% case page.lang %}
-            {% when 'en' %}
-            Coffees: 
-            {% when 'ch' %}
-            咖啡号: 
-            {% endcase %}
-        </li>
-        {% for coffee in coffees %}
-        <li>
-            <a href="#{{ forloop.index }}" class="short-menu-item"> {{ forloop.index }} </a>
-        </li>
-        {% endfor %}
-    </ul>
+<!-- top menu for bigger screens -->
+<div class="submenu navbar navbar-fixed-top " role="complementary">
+	<div class="container">
+	<!-- <button type="button" class="submenu-toggle navbar-toggle collapsed" data-toggle="collapse" data-target=".submenu-collapse">
+                <span class="sr-only">Toggle submenu navigation</span>
+                <span class="glyphicon glyphicon-align-justify"></span>
+    </button> -->
+    <!-- <div class="submenu-collapse " style="height: 1px;"> -->
+    	<ul class="submenu-nav nav navbar-nav">
+    		{% for slide in slides %}
+    		{% case page.lang %}
+    		{% when 'en' %}
+    		{% assign name = slide.name-en %}
+    		{% when 'ch' %}
+    		{% assign name = slide.name-ch %}
+    		{% endcase %}
+    		<li>
+    			<a href="#{{ forloop.index }}" class="short-menu-item"> {{ name }} </a>
+    		</li>
+    		{% endfor %}
+    	</ul>
+    <!-- </div> -->
+  </div>
 </div>

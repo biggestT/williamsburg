@@ -2,7 +2,7 @@ $(function () {
 		console.log('loaded page');
 		var paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
 		console.log(paddingTop);
-	$('.category-menu a').click(function () {
+	$('.submenu a').click(function () {
 		console.log('rolling');
 		// var imageUrl = $(this).attr('data-image');
 
