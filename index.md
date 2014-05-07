@@ -9,7 +9,7 @@ lang: en
 ##Distributor of single origin coffee to selected venues in Shanghai
 
 
-![education](images/street4.jpg)
+<!-- ![education](images/street4.jpg) -->
 
 ![education](images/street3.jpg)
 

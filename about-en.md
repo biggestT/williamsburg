@@ -8,7 +8,6 @@ lang: en
 
 ##Our history
 
-![education](images/street1.jpg)
 
 ![education](images/street.jpg)
 

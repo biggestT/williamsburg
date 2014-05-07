@@ -20,7 +20,7 @@ layout: default
     {% endcase %}
 
     <div class="row">
-        <div class="row category-content padded light-background">
+        <div class="row category-content padded ">
             <div class="col-xs-12 category-title">
                 <a id="{{ forloop.index }}" class="category-anchor">
                     <h1>{{ name }}</h1>
@@ -32,7 +32,7 @@ layout: default
                     <p>{{ text }}</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-xs-12 category-image">
+            <div class="col-lg-6 col-md-6 col-xs-12 category-image thumbnail">
                 <img class="img-responsive" src="images/education/{{ slide.image }}" alt="...">
             </div>
         </div>
@@ -40,26 +40,4 @@ layout: default
     {% endfor %}
 </div>
 
-<div class="submenu navbar navbar-fixed-top " role="complementary">
-    <div class="container">
-    <!-- <button type="button" class="submenu-toggle navbar-toggle collapsed" data-toggle="collapse" data-target=".submenu-collapse">
-                <span class="sr-only">Toggle submenu navigation</span>
-                <span class="glyphicon glyphicon-align-justify"></span>
-    </button> -->
-    <!-- <div class="submenu-collapse " style="height: 1px;"> -->
-        <ul class="submenu-nav nav navbar-nav">
-            {% for slide in slides %}
-            {% case page.lang %}
-            {% when 'en' %}
-            {% assign name = slide.name-en %}
-            {% when 'ch' %}
-            {% assign name = slide.name-ch %}
-            {% endcase %}
-            <li>
-                <a href="#{{ forloop.index }}" class="short-menu-item"> {{ name }} </a>
-            </li>
-            {% endfor %}
-        </ul>
-    <!-- </div> -->
-  </div>
-</div>
+{% include submenu %}

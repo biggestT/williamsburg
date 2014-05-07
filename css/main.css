@@ -8,7 +8,7 @@
 }
 
 html {
-  background: -webkit-radial-gradient(#5b0061, #161313);
+  background: -webkit-radial-gradient(#613600, #161313);
 
   /* background: url(images/coffee/WilliamsburgShanghaiRoast.jpg) no-repeat center center fixed; */
   /* -webkit-background-size: cover; */
@@ -56,11 +56,19 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-
+/* BUTTONS */
+.btn, .btn-primary {
+  background-color: rgb(94, 66, 1);
+  border-color: transparent;
+}
+.btn:hover, .btn:focus, .btn-primary:hover, .btn-primary:focus {
+  background-color: rgb(168, 114, 0);
+  border-color: transparent;
+}
 
 /* HEADERS */
 h1, h2, h3 {
-  color: rgb(99, 86, 55);
+  color: rgb(194, 158, 71);
   text-transform: capitalize;
 }
 h1 {
@@ -221,7 +229,7 @@ ul {
   /* padding-right: 20px; */
 }
 .caption {
-  /* padding: 0px 20px; */
+  padding: 0px 20px;
 }
 .coffee-image {
   min-height: inherit;
@@ -229,6 +237,7 @@ ul {
 }
 .caption>p{
   /* color: black; */
+  margin-top: 40px;
 }
 
 /* MOBILE DEVICES */
