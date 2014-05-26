@@ -4,6 +4,16 @@ layout: default
 
 {% assign slides = site.categories['education'] %}
 
+<div class="container content 
+          {% if page.lang == 'ch' %} 
+          ch-content
+          {% else %}
+          en-content
+          {% endif  %}
+      ">
+        <div class="row">
+          
+       
 <div class="col-md-9 col-xs-12 category-content padded">
 
     {% for slide in slides %}
@@ -41,3 +51,6 @@ layout: default
 </div>
 
 {% include submenu %}
+
+   </div>
+</div>

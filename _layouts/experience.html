@@ -2,8 +2,18 @@
 layout: default
 ---
 
-<div class="col-sm-9 col-xs-12 page padded">
+<div class="container content 
+          {% if page.lang == 'ch' %} 
+          ch-content
+          {% else %}
+          en-content
+          {% endif  %}
+      ">
+  <div class="row">
+  
+  	<div class="col-sm-9 col-xs-12 page padded">
+  		{{ content }}
 
-{{ content }}
-
+  	</div>
+  </div>
 </div>
