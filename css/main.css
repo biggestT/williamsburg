@@ -18,6 +18,7 @@ body {
   /* padding-bottom: 120px; */
   /* background-color: rgb(49, 32, 0); */
   background: url(../graphic/upper.png) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
+  background: transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -272,6 +273,72 @@ ul {
   margin-top: 40px;
 }
 
+
+
+
+/* PARALLAX CSS */
+
+.stellar {
+  position: fixed;
+}
+.stellar img {
+  height: inherit;
+}
+
+
+#intro {
+  height: 70vh;
+}
+#glo {
+  height: 1500px;
+}
+
+/* test coffee cup elements */
+.cup {
+  height: 400px;
+}
+#cup-1 {
+  top: 300px;
+}
+#cup-2 {
+  top: 600px;
+  left: 30vw;
+}
+#cup-3 {
+  left: 60vw;
+  top: 900px;
+}
+
+
+#miss-shanghai {
+  height: 1200px;
+}
+
+.center{
+  padding: 20vh 0 0 0;
+  text-align: center;
+}
+
+.center h1{
+  font-size: 400%;
+}
+
+.float-left{
+  float: left;  
+  margin: 0 0 0 5vw;
+}
+
+.float-right{
+   float: right; 
+   margin: 0 5vw 0 0; 
+}
+
+.float-left, .float-right{
+  /*padding: 100px 0 0 0;*/
+  /*position: relative;*/
+  width: 50vw; 
+}
+
 /* MOBILE DEVICES */
 
 @media (max-width: 768px) {
@@ -309,9 +376,12 @@ ul {
     top: 80vh;
   }
   .submenu-nav>li>a {
-  font-size: 70%;
-  padding: 0px 10px;
-}
+    font-size: 70%;
+    padding: 0px 10px;
+  }
+  .cup {
+    height: 200px;
+  }
   .nav {
   }
   .nav a {
@@ -320,85 +390,4 @@ ul {
   .navbar {
     /* margin-bottom: 50px; */
   }
-}
-
-
-/* PARALLAX CSS */
-
-.story {
-  overflow-x: hidden;
-}
-.center{
-  padding: 20vh 0 0 0;
-  text-align: center;
-}
-.center>h1{
-  font-size: 400%;
-}
-
-.float-left{
-  float: left;  
-  margin: 0 0 0 5vw;
-}
-
-.float-right{
-  float: right;
-  margin: 0 5vw 0 0;
-}
-
-#intro{
-  /*background-image: url(../images/street4.jpg);*/
-  height: 70vh;
-  color: white;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-
-#second{
-  /*background-image: url(../images/street3.jpg);*/
-  color: white;
-  margin: 0 auto;
-  padding: 0;
-}
-
-#second .bg{
-  margin: 0 auto;
-  padding: 0;
-  position: absolute;
-  width: 900px;
-  z-index: 200;
-}
-
-#third{
-  color: white;
-  height: 650px;
-  padding: 100px 0 0 0; 
-}
-
-#fifth{
-  background: #ccc;
-  height: 400px;
-  margin: 0 auto;
-  padding: 40px 0 0 0;
-}
-
-.story{
-  margin: 0 auto;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 100vw; 
-}
-
-.story .float-left, .story .float-right{
-  padding: 100px 0 0 0;
-  position: relative;
-  width: 50vw; 
-}
-.cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-  background-attachment: fixed;
 }
