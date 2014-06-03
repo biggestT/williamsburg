@@ -11,5 +11,6 @@
 * 2014-05-06 fixed menus, slides and background design according to emails 7 hrs 57 min
 * 2014-05-07 menus and refactoring 2 hrs 40 min
 * 2014-05-12 parallax effect on front page 3 hrs 41 min
+* 2014-06-02 front page and social networks connection 3 hrs 29 min
 
-### Total time spent: 47 hours and 32 minutes 
+### Total time spent: 51 hours and 1 minutes 

@@ -14,7 +14,7 @@ html {
   /* -webkit-background-size: cover; */
 }
 body {
-  padding-top: 80px;
+   padding-top: 60px; 
   /* padding-bottom: 120px; */
   /* background-color: rgb(49, 32, 0); */
   background: url(../graphic/upper.png) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
@@ -51,7 +51,7 @@ p>img {
 a {
   color: #FFF;
 }
-a:hover, a:active, a:focus {
+b, a:hover, a:active, a:focus {
   color: #ac9166;
   text-decoration: none;
 }
@@ -67,7 +67,7 @@ a:hover, a:active, a:focus {
 }
 
 /* HEADERS */
-h1, h2, h3 {
+b, h1, h2, h3 {
   color: rgb(194, 158, 71);
   text-transform: capitalize;
 }
@@ -192,9 +192,9 @@ h2 {
   font-size: 90%;
   margin-bottom: 5px;
 }
-b {
+/*b {
   color: #F00;
-}
+}*/
 
 /* GALLERY */
 .submenu {
@@ -320,4 +320,85 @@ ul {
   .navbar {
     /* margin-bottom: 50px; */
   }
+}
+
+
+/* PARALLAX CSS */
+
+.story {
+  overflow-x: hidden;
+}
+.center{
+  padding: 20vh 0 0 0;
+  text-align: center;
+}
+.center>h1{
+  font-size: 400%;
+}
+
+.float-left{
+  float: left;  
+  margin: 0 0 0 5vw;
+}
+
+.float-right{
+  float: right;
+  margin: 0 5vw 0 0;
+}
+
+#intro{
+  /*background-image: url(../images/street4.jpg);*/
+  height: 70vh;
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+#second{
+  /*background-image: url(../images/street3.jpg);*/
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#second .bg{
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 900px;
+  z-index: 200;
+}
+
+#third{
+  color: white;
+  height: 650px;
+  padding: 100px 0 0 0; 
+}
+
+#fifth{
+  background: #ccc;
+  height: 400px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+.story{
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100vw; 
+}
+
+.story .float-left, .story .float-right{
+  padding: 100px 0 0 0;
+  position: relative;
+  width: 50vw; 
+}
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-attachment: fixed;
 }
