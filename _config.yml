@@ -3,9 +3,9 @@ description: Coffee Roasters in Shanghai
 markdown: redcarpet
 permalink: /:categories/:title
 
-production_url : http://biggestT.github.io/williamsburg
+production_url : http://wcoffeeroasters.com
 
-BASE_PATH : http://biggestT.github.io/williamsburg
+BASE_PATH : http://wcoffeeroasters.com
 
 menuitems:
   about:

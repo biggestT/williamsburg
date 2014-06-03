@@ -1,5 +1,5 @@
 {% if site.safe and site.BASE_PATH and site.BASE_PATH != '' %}
-  {% assign BASE_PATH = 'wcoffeeroasters.com' %}
+  {% assign BASE_PATH = site.BASE_PATH %}
   {% assign HOME_PATH = site.BASE_PATH %}
 {% else %}
   {% assign BASE_PATH = nil %}
