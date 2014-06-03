@@ -8,8 +8,8 @@ $(function () {
 	$.stellar({
 		horizontalOffset: 0,
 		verticalOffset: 0,
-		hideElement: function($elem) { $elem.fadeOut(50); },
-		hideDistantElements: 1,
+		// hideElement: function($elem) { $elem.fadeOut(50); },
+		hideDistantElements: 1
 	});
 
 	var paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
