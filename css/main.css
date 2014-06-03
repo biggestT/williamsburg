@@ -280,9 +280,11 @@ ul {
 
 .stellar {
   position: fixed;
+  overflow: hidden;
 }
 .stellar img {
   height: inherit;
+  -webkit-filter: sepia(0.5);
 }
 
 
@@ -294,25 +296,34 @@ ul {
 }
 
 /* test coffee cup elements */
-.cup {
+#glo-labels {
   height: 400px;
+  top: 400px;
 }
-#cup-1 {
-  top: 300px;
-}
-#cup-2 {
+#glo-menu {
   top: 600px;
-  left: 30vw;
+  right: 0px;
+  height: 400px;
+  /*width: 60vw;*/
 }
-#cup-3 {
-  left: 60vw;
-  top: 900px;
+#glo-menu img {
+  /*width: auto;*/
+  /*-webkit-transform: rotate(-25deg);*/
+}
+#lilpimpw {
+  height: 200px;
+  top: 950px;
+}
+#lilpimpw img {
+  /*margin-top: -200px;*/
+  width: 100vw;
+  height: auto;
 }
 
 #pearltower {
   height: 700px;
-  top: 300px;
-  left: -100px;
+  top: 200px;
+  left: -200px;
   -webkit-filter: sepia(0.7);
   -webkit-transform: rotateX(1);
   -webkit-transform: scaleX(-1);
