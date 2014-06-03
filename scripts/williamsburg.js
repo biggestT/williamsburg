@@ -8,6 +8,7 @@ $(function () {
 	$.stellar({
 		horizontalOffset: 0,
 		verticalOffset: 0,
+		horizontalScrolling: false,
 		// hideElement: function($elem) { $elem.fadeOut(50); },
 		hideDistantElements: 1
 	});
