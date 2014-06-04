@@ -6,21 +6,21 @@ lang: en
 
 
 <div class="container">
-  
-<div id="glo-covers" class="cup parallax" data-stellar-ratio="0.8" >
+
+<div id="glo-covers" class="cup parallax" data-stellar-ratio="0.6" >
   <img class="desktop-only" src="//:0" data-desktop-src="images/labels.png"/>
 </div>
-<div id="glo-labels" class="cup parallax" data-stellar-ratio="0.9" >
+<!-- <div id="glo-labels" class="cup parallax" data-stellar-ratio="0.9" >
   <img class="desktop-only" src="//:0" data-desktop-src="images/backlabels.png"/>
-</div>
+</div> -->
 
 
-<div id="miss-cover" class="cup parallax" data-stellar-ratio="0.8" >
+<div id="miss-cover" class="cup parallax" data-stellar-ratio="0.6" >
   <img class="desktop-only" src="//:0" data-desktop-src="images/miss-cover.jpg"/>
 </div>
-<div id="miss-label" class="cup parallax" data-stellar-ratio="0.9" >
+<!-- <div id="miss-label" class="cup parallax" data-stellar-ratio="0.9" >
   <img class="desktop-only" src="//:0" data-desktop-src="images/miss-label.jpg"/>
-</div>
+</div> -->
 
 <div id="intro"  class="row center">
     <h1>Welcome to williamsburg</h1>
