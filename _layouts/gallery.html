@@ -27,26 +27,26 @@ layout: default
 		{% assign text = slide.text-ch %}
 {% endcase %}
 
-	<div class="row coffee-entry">
-		<div class="col-sm-6 col-xs-12 category-title">
-				<a id="{{ forloop.index }}" class="category-anchor">
-						<h1>{{ name }}</h1>
-						<h2>
-								<span class="glyphicon glyphicon-certificate"></span> {{ slide.code }} 
-						</h2>
-						<h2>
-								<span class="glyphicon glyphicon-globe"></span> {{ origin }} 
-						</h2>
-				</a>
-				<div class="caption en-content">
-						<p>{{ text }}</p>
-				</div>
+<a id="{{ forloop.index }}" class="category-anchor">
+</a>
+<div class="row coffee-entry">
+	<div class="col-sm-6 col-xs-12 category-title">
+		<h1>{{ name }}</h1>
+		<h2>
+			<span class="glyphicon glyphicon-certificate"></span> {{ slide.code }} 
+		</h2>
+		<h2>
+			<span class="glyphicon glyphicon-globe"></span> {{ origin }} 
+		</h2>
+		<div class="caption en-content">
+			<p>{{ text }}</p>
 		</div>
-		<!-- <div class="col-sm-6 col-xs-12"> -->
-		<!-- </div> -->
-		<div class="col-sm-6 col-xs-12 category-image thumbnail">
-				<img class="img-responsive desktop-only" data-desktop-src="images/coffee/{{ slide.image }}" src="//:0" alt="...">
-		</div>
+	</div>
+	<!-- <div class="col-sm-6 col-xs-12"> -->
+	<!-- </div> -->
+	<div class="col-sm-6 col-xs-12 category-image thumbnail">
+		<img class="img-responsive desktop-only" data-desktop-src="images/coffee/{{ slide.image }}" src="//:0" alt="...">
+	</div>
 </div>
 {% endfor %}
 </div>

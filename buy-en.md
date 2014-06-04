@@ -10,7 +10,7 @@ lang: en
 
 <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#weChatQr">
-  Find us on Wechat and Weibo
+  See contact information
 </button>
 
 <!-- Modal -->

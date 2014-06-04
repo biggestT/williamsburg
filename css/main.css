@@ -67,9 +67,7 @@ b, h1, h2, h3 {
   text-transform: capitalize;
 }
 h1 {
-  /*margin: 50% 0px 0px 0px;*/
-  /*;text-align: center;*/
-  /* width: 2000px; */
+  margin-top: 0px;
 }
 h2 {
   color: #ac9166;
@@ -140,6 +138,7 @@ h2 {
 .navbar, .navbar-collapse, .submenu {
   background-color: rgba(0, 0, 0, 0);
   background: -webkit-linear-gradient(#020202, #1D1D1D);
+  z-index: 2;
   background: -moz-linear-gradient(#020202, #1D1D1D);
 }
 .navbar-lang {
@@ -243,6 +242,7 @@ ul {
 }
 .coffee-entry{
   min-height: 90vh;
+  margin-top: 30px;
   /* margin-bottom: 40px; */
   /* background-color: white; */
 }
@@ -373,8 +373,10 @@ ul {
     width: 90%;
   }
   .submenu {
-    top: 80vh;
-  }
+    /* bottom: 1000px; */
+  
+    z-index: 0;
+}
   .submenu-nav>li>a {
     font-size: 70%;
     padding: 0px 10px;
