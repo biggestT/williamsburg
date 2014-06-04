@@ -1,10 +1,5 @@
 $(function () {
 
-	console.log($(".stellar-container"));
-
-	// $.stellar();
-	// // $("#stellar-container").stellar();
-
 	$.stellar({
 		horizontalOffset: 0,
 		verticalOffset: 0,
@@ -12,6 +7,8 @@ $(function () {
 		// hideElement: function($elem) { $elem.fadeOut(50); },
 		hideDistantElements: 1
 	});
+
+	
 
 	var paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
 
@@ -22,5 +19,17 @@ $(function () {
 		$(this).toggleClass('active');
 	})
 
+	console.log(screen.width);
+	// only load parallaximages if on desktop
+	loadImgIfDesktop();
 }) 
+
+
+function loadImgIfDesktop() {
+	if (screen.width>=768) {
+		$("img.desktop-only").each(function () {
+			$(this).attr('src',  $(this).attr('data-desktop-src'));
+		});
+	}	
+}
 

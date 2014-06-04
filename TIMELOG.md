@@ -12,5 +12,6 @@
 * 2014-05-07 menus and refactoring 2 hrs 40 min
 * 2014-05-12 parallax effect on front page 3 hrs 41 min
 * 2014-06-02 front page and social networks connection 3 hrs 29 min
+* 2014-06-03 parallax effect and content insertion 7 hrs 6 min
 
-### Total time spent: 51 hours and 1 minutes 
+### Total time spent: 58 hours and 7 minutes 

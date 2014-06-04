@@ -9,20 +9,14 @@
 
 html {
   background: -webkit-radial-gradient(#613600, #161313);
+  background: -moz-radial-gradient(#613600, #161313);
 
   /* background: url(images/coffee/WilliamsburgShanghaiRoast.jpg) no-repeat center center fixed; */
   /* -webkit-background-size: cover; */
 }
 body {
    padding-top: 60px; 
-  /* padding-bottom: 120px; */
-  /* background-color: rgb(49, 32, 0); */
-  background: url(../graphic/upper.png) no-repeat center center fixed;    -webkit-background-size: cover;   -moz-background-size: cover;   -o-background-size: cover;   background-size: cover;
   background: transparent;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   color: #FFF;
   font: 13.34px 'Gotham Round', Helvetica, sans-serif;
   font-size: large;
@@ -146,6 +140,7 @@ h2 {
 .navbar, .navbar-collapse, .submenu {
   background-color: rgba(0, 0, 0, 0);
   background: -webkit-linear-gradient(#020202, #1D1D1D);
+  background: -moz-linear-gradient(#020202, #1D1D1D);
 }
 .navbar-lang {
     float: right;
@@ -278,21 +273,22 @@ ul {
 
 /* PARALLAX CSS */
 
-.stellar {
+.parallax {
   position: fixed;
   overflow: hidden;
 }
-.stellar img {
+.parallax img {
   height: inherit;
   -webkit-filter: sepia(0.5);
 }
-
-
-#intro {
-  height: 70vh;
+.story {
+  margin-top: 20px;
+  height: 1300px;
 }
-#glo {
-  height: 1500px;
+
+
+.handwritten img {
+  width: 170px;
 }
 
 /* test coffee cup elements */
@@ -304,20 +300,10 @@ ul {
   top: 600px;
   right: 0px;
   height: 400px;
-  /*width: 60vw;*/
 }
 #glo-menu img {
   /*width: auto;*/
   /*-webkit-transform: rotate(-25deg);*/
-}
-#lilpimpw {
-  height: 200px;
-  top: 950px;
-}
-#lilpimpw img {
-  /*margin-top: -200px;*/
-  width: 100vw;
-  height: auto;
 }
 
 #pearltower {
@@ -329,12 +315,10 @@ ul {
   -webkit-transform: scaleX(-1);
 }
 
-#miss-shanghai {
-  height: 1200px;
-}
 
 .center{
-  padding: 20vh 0 0 0;
+  margin-top: 20vh;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -344,12 +328,12 @@ ul {
 
 .float-left{
   float: left;  
-  margin: 0 0 0 5vw;
+  margin: 20px 0 0 5vw;
 }
 
 .float-right{
    float: right; 
-   margin: 0 5vw 0 0; 
+   margin: 20px 5vw 0 0; 
 }
 
 .float-left, .float-right{
@@ -398,13 +382,18 @@ ul {
     font-size: 70%;
     padding: 0px 10px;
   }
-  .cup {
-    height: 200px;
+  .center {
+    margin-top: 4vh;
   }
-  .nav {
+  .story {
+    height: auto;
   }
-  .nav a {
-
+  .parallax {
+    visibility: hidden;
+    height: 0px;
+  }
+  .handwritten img {
+    width: 90px;
   }
   .navbar {
     /* margin-bottom: 50px; */
