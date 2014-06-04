@@ -188,10 +188,6 @@ h2 {
   font-size: 90%;
   margin-bottom: 5px;
 }
-/*b {
-  color: #F00;
-}*/
-
 /* GALLERY */
 .submenu {
   position: fixed;
@@ -368,6 +364,7 @@ ul {
 }
   body {
     padding-top: 80px;
+    padding-bottom: 60px;
     min-width: 200px;
     font-size: 11px;
     text-align: left;
