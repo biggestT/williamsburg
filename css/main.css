@@ -301,22 +301,18 @@ img {
 }
 
 /* test coffee cup elements */
-#glo-covers {
+.first-scroll {
   height: 350px;
   top: 300px;
   left: 2vw;
 }
 
-#miss-cover {
+.second-scroll {
   top: 700px;
-  right: 10vw;
-  height: 600px;
+  right: 2vw;
+  height: 400px;
 }
 
-#polaroid1 {
-  height: 300px;
-  top: 300px;
-}
 
 
 .center{
@@ -329,21 +325,6 @@ img {
   font-size: 400%;
 }
 
-.float-left{
-  float: left;  
-  margin: 20px 0 0 5vw;
-}
-
-.float-right{
-   float: right; 
-   margin: 20px 5vw 0 0; 
-}
-
-.float-left, .float-right{
-  /*padding: 100px 0 0 0;*/
-  /*position: relative;*/
-  width: 50vw; 
-}
 
 /* MOBILE DEVICES */
 

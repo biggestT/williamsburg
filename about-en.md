@@ -6,8 +6,11 @@ lang: en
 
 
 <div class="container">
-	<div id="polaroid1" class="cup parallax" data-stellar-ratio="0.6" >
+	<div  class="cup parallax first-scroll" data-stellar-ratio="0.6" >
 		<img class="desktop-only" src="//:0" data-desktop-src="images/polaroid1.png"/>
+	</div>
+	<div class="cup parallax second-scroll" data-stellar-ratio="0.6" >
+		<img class="desktop-only" src="//:0" data-desktop-src="images/polaroid2.png"/>
 	</div>
 
 	<div id="intro"  class="row center">
@@ -16,9 +19,9 @@ lang: en
 	</div> 
 
 
-	<div id="somelove" class="row handwritten" >
+	<div id="someshit" class="row handwritten" >
 		<div class="col-sm-4 col-sm-offset-4 col-xs-2">
-			<img src="graphic/somelove.svg"/>
+			<img src="graphic/howwegothere.svg"/>
 		</div>
 	</div>
 

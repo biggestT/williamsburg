@@ -7,7 +7,7 @@ lang: en
 
 <div class="container">
 
-<div id="glo-covers" class="cup parallax" data-stellar-ratio="0.6" >
+<div  class="cup parallax first-scroll" data-stellar-ratio="0.6" >
   <img class="desktop-only" src="//:0" data-desktop-src="images/labels.png"/>
 </div>
 <!-- <div id="glo-labels" class="cup parallax" data-stellar-ratio="0.9" >
@@ -15,8 +15,8 @@ lang: en
 </div> -->
 
 
-<div id="miss-cover" class="cup parallax" data-stellar-ratio="0.6" >
-  <img class="desktop-only" src="//:0" data-desktop-src="images/miss-cover.jpg"/>
+<div class="cup parallax second-scroll" data-stellar-ratio="0.6" >
+  <img class="desktop-only" src="//:0" data-desktop-src="images/miss-cover.png"/>
 </div>
 <!-- <div id="miss-label" class="cup parallax" data-stellar-ratio="0.9" >
   <img class="desktop-only" src="//:0" data-desktop-src="images/miss-label.jpg"/>
@@ -45,7 +45,8 @@ lang: en
     <h2>Miss Shanghai Blend & Coin Qian Collection</h2>
     <p>Limited edition Miss Shanghai Blend. Teamed up with artist Coin Qian (<a href="http://www.coinqian.com">coinqian.com</a>) from Xun Mi Café + Gallery (541 Yuyuan Lu, house 30) to create a colourful packaging design that revives flavours from Shanghai’s flamboyant past. The blend is a mixture of Colombian, Honduran and Guatemalan single-origins roasted at a med-high level reveals hints of caramel, amaretto and almondy goodness. Miss shanghai is supplied and sold to these places:
     </br></br> Lis cafe & restaurant on Dagu lu number 388 
-  </br> Xun Mi cafe & gallery on Yuyuan lu number 541, house number 30</p>
+  </br> Xun Mi cafe & gallery on Yuyuan lu number 541, house number 30
+  </br>Axis cafe & bakery on South Huangpi lu number 720</p>
   </div>
 </div>
 
