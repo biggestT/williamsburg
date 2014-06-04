@@ -275,40 +275,57 @@ ul {
 }
 .parallax img {
   height: inherit;
-  -webkit-filter: sepia(0.5);
+  z-index: 0;
+}
+img {
+  -webkit-filter: sepia(0.4);
+  filter: sepia(0.4);
 }
 .story {
   margin-top: 20px;
-  height: 1300px;
+  height: 500px;
+}
+.story-text {
+  background-color: rgba(0, 0, 0, 0.33);
+  padding: 15px;
+  z-index: 1;
+  border-radius: 5px;
 }
 
 
-.handwritten img {
+#someshit img {
   width: 170px;
+}
+#somelove img {
+  width: 300px;
 }
 
 /* test coffee cup elements */
-#glo-labels {
+#glo-covers {
   height: 400px;
   top: 400px;
 }
-#glo-menu {
-  top: 600px;
-  right: 0px;
-  height: 400px;
-}
-#glo-menu img {
-  /*width: auto;*/
-  /*-webkit-transform: rotate(-25deg);*/
+#glo-labels {
+  height: 300px;
+  top: 650px;
+  right: 20vw;
 }
 
-#pearltower {
-  height: 700px;
-  top: 200px;
-  left: -200px;
-  -webkit-filter: sepia(0.7);
-  -webkit-transform: rotateX(1);
-  -webkit-transform: scaleX(-1);
+#miss-cover {
+  top: 900px;
+  right: 10vw;
+  height: 600px;
+}
+#miss-label {
+  top: 1200px;
+  left: 10vw;
+  height: 200px;
+}
+
+
+#polaroid1 {
+  height: 300px;
+  top: 300px;
 }
 
 
@@ -399,5 +416,8 @@ ul {
   }
   .navbar {
     /* margin-bottom: 50px; */
+  }
+  .story-text {
+    background-color: transparent;
   }
 }
