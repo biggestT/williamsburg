@@ -388,6 +388,9 @@ ul {
   .story {
     height: auto;
   }
+  .category-image {
+    visibility: hidden;
+  }
   .parallax {
     visibility: hidden;
     height: 0px;

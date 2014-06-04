@@ -8,13 +8,13 @@ lang: en
 <div class="container">
 
 <div id="intro"  class="row center">
-    <h1>Welcome motherfucker</h1>
-    <p>We roast single origin coffee for selected venues in Shanghai</p>
+    <h1>Welcome to williamsburg</h1>
+    <p>Roasters of single origin coffee for selected venues in Shanghai</p>
 </div> 
 
 <div id="someshit" class="row handwritten" >
   <div class="col-sm-4 col-sm-offset-5 col-xs-2">
-    <img src="graphic/someshit.svg"/>
+    <img src="graphic/somestuff.svg"/>
   </div>
 </div>
 
