@@ -13,5 +13,7 @@
 * 2014-05-12 parallax effect on front page 3 hrs 41 min
 * 2014-06-02 front page and social networks connection 3 hrs 29 min
 * 2014-06-03 parallax effect and content insertion 7 hrs 6 min
+* 2014-07-04 finishing touch 7 hrs 22 min
+* 2014-07-05 meeting and start up of phase 0 hrs 56 min
 
-### Total time spent: 58 hours and 7 minutes 
+### Total time spent: 85 hours and 25 minutes 

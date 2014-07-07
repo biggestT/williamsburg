@@ -4,9 +4,9 @@ title: Williamsburg
 lang: en
 ---
 
-#How to Buy
+#
 
-##Contact us for more information!
+##What we offer
 
 <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#weChatQr">
