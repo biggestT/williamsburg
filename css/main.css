@@ -15,7 +15,7 @@ html {
   /* -webkit-background-size: cover; */
 }
 body {
-   padding-top: 51px; 
+   padding-top: 82px; 
   background: transparent;
   color: #FFF;
   font: 13.34px 'Gotham Round', Helvetica, sans-serif;
@@ -244,7 +244,7 @@ ul {
 .image-background {
   width: 100vw;
 }
-.coffee-entry{
+.coffee-entry, .venue{
   min-height: 90vh;
   margin-top: 30px;
   /* margin-bottom: 40px; */
@@ -271,14 +271,15 @@ ul {
 /* VENUESMAP */
 #map {
   margin: 20px;
+  position: fixed;
 }
 .venue {
-  display: none;
-  position: absolute;
-  top: 100px;
+  /*display: none;*/
+  /*position: absolute;*/
+  /*top: 100px;*/
 }
 .venue-container {
-  z-index: 1200;
+  /*z-index: 1200;*/
   /* background-color: rgb(53, 27, 4); */
   border-radius: 20px;
   padding: 20px;

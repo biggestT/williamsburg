@@ -17,19 +17,13 @@ $('#map').ready( function() {
 	function onPopupClose(evt) {
     selectControl.unselect(selectedVenue);
   }
-  function onFeatureSelect(feature) {
-    // selectedVenue = feature;
-    console.log('selected venue');
-    // popup = new OpenLayers.Popup.FramedCloud('venue', feature.geometry.getBounds().getCenterLonLat(), null, 'hej', null, true, onPopupClose);
-    // feature.popup = popup;
-    // map.addPopup(popup);
+  function venueSelected(feature) {
+  	var id = feature.data.id;
+  	$(id).click();
   }
-  function onFeatureUnselect(feature) {
-    console.log('unselected venue');
-    // map.removePopup(feature.popup);
-    // feature.popup.destroy();
-    // feature.popup = null;
-  }    
+  function onFeatureSelect(feature) {
+  	venueSelected(feature);
+  }
 
 	var venuesLayer = new OpenLayers.Layer.Vector('Overlay', {
 		styleMap: new OpenLayers.StyleMap({
@@ -45,7 +39,7 @@ $('#map').ready( function() {
 	$('.venue-meta').each(function (index) {
 		var $this = $(this);
 		var olPoint = new OpenLayers.Geometry.Point($this.attr('data-lon'), $this.attr('data-lat')).transform("EPSG:4326", "EPSG:3857");
-		var olVector = new OpenLayers.Feature.Vector(olPoint, {tooltip: 'OpenLayers'})
+		var olVector = new OpenLayers.Feature.Vector(olPoint, {tooltip: $this.attr('name'), id: $this.attr('id')})
 		venues.push(new Venue (olPoint, olVector, index));
 		venuesLayer.addFeatures([olVector]);
 	});
@@ -59,9 +53,9 @@ $('#map').ready( function() {
   });
 
 	var polygonLayer = new OpenLayers.Layer.Vector("Polygon Layer");
-  selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {onSelect: onFeatureSelect, onUnselect: onFeatureUnselect});
-  selectControl.activate();
+  selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {onSelect: onFeatureSelect});
   map.addControl(selectControl);
+  selectControl.activate();
   
 	console.log(venues);
 })

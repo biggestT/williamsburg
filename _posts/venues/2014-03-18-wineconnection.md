@@ -1,6 +1,7 @@
 ---
 layout: venue
 name: wine connection
+name-en: wine connection
 image: wineconnection.jpg
 logo: logo_wineconnection.jpg
 categories: venues
