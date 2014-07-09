@@ -9,10 +9,10 @@ BASE_PATH : http://wcoffeeroasters.com
 
 menuitems:
   about:
-    en: about
+    en: venues
     ch: 关于
   coffee:
-    en: coffee
+    en: coffees
     ch: 咖啡
   education:
     en: tips

@@ -62,7 +62,7 @@ b, a:hover, a:active, a:focus {
 }
 
 /* HEADERS */
-b, h1, h2, h3 {
+b, h1, h2, h3, h4 {
   color: rgb(194, 158, 71);
   text-transform: capitalize;
 }
@@ -265,7 +265,9 @@ ul {
 }
 
 
-
+#map {
+  margin: 20px;
+}
 
 /* PARALLAX CSS */
 

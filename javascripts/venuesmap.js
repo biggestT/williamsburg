@@ -12,27 +12,33 @@ $('#map').ready( function() {
       "http://otile4.mqcdn.com/tiles/1.0.0/map/${z}/${x}/${y}.png"
     ])
 
-	var startLocation = new OpenLayers.LonLat(121.4593505859375, 31.243333658561085);
-	startLocation.transform("EPSG:4326", "EPSG:3857");
+	var startLocation = new OpenLayers.LonLat(121.4593505859375, 31.243333658561085).transform("EPSG:4326", "EPSG:3857");
 
 
 	var venuesLayer = new OpenLayers.Layer.Vector('Overlay', {
 		styleMap: new OpenLayers.StyleMap({
 			externalGraphic: '../graphic/beanmark.png',
-			graphicWidth: 20, graphicHeight: 24, graphicYOffset: -24,
+			graphicWidth: 27,
+			graphicHeight: 40,
+			graphicYOffset: -24,
 			title: '${tooltip}'
 		})
 	});
 
-	testVenueLocation = new OpenLayers.LonLat(121.4593505859375, 31.243333658561085);
-	testVenueLocation.transform("EPSG:4326", "EPSG:3857");
+	var venues = [];
+	$('.venue-meta').each(function (index) {
+		var $this = $(this);
+		var olPoint = new OpenLayers.Geometry.Point($this.attr('data-lon'), $this.attr('data-lat')).transform("EPSG:4326", "EPSG:3857");
+		var olVector = new OpenLayers.Feature.Vector(olPoint, {tooltip: 'OpenLayers'})
+		venues.push(new Venue (olPoint, olVector, index));
+		venuesLayer.addFeatures([olVector]);
+	});
 
-	venuesLayer.addFeatures([
-    new OpenLayers.Feature.Vector(testVenueLocation, {tooltip: 'OpenLayers'})
-  ]);
+	console.log(venues);
+
 
 	map = new OpenLayers.Map({
-		div: "map", 
+		div: 'map', 
     layers: [osmLayer, venuesLayer],
     center: startLocation,
     zoom: 12
@@ -40,3 +46,9 @@ $('#map').ready( function() {
 
 	console.log(map);
 })
+
+function Venue (olPoint, olVector, index) {
+	this.olPoint = olPoint;
+	this.olVector = olVector;
+	this.index = index;
+}

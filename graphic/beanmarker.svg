@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="292.1062"
+   height="432.17188"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   inkscape:export-filename="/home/bigt/williamsburg/graphic/beanmark.png"
+   inkscape:export-xdpi="8.9245052"
+   inkscape:export-ydpi="8.9245052"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3805">
+      <stop
+         id="stop3817"
+         offset="0"
+         style="stop-color:#a05a00;stop-opacity:1;" />
+      <stop
+         style="stop-color:#472800;stop-opacity:1;"
+         offset="1"
+         id="stop3819" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3789">
+      <stop
+         id="stop3791"
+         offset="0"
+         style="stop-color:#7b4703;stop-opacity:1;" />
+      <stop
+         style="stop-color:#7b4703;stop-opacity:0.9372549;"
+         offset="0.0625"
+         id="stop3793" />
+      <stop
+         style="stop-color:#7b4703;stop-opacity:0.8745098;"
+         offset="0.125"
+         id="stop3795" />
+      <stop
+         id="stop3803"
+         offset="0.1875"
+         style="stop-color:#7b4703;stop-opacity:0.81176471;" />
+      <stop
+         style="stop-color:#7b4703;stop-opacity:0.74901961;"
+         offset="0.25"
+         id="stop3797" />
+      <stop
+         style="stop-color:#7b4703;stop-opacity:0.49803922;"
+         offset="0.78076923"
+         id="stop3799" />
+      <stop
+         id="stop3801"
+         offset="1"
+         style="stop-color:#7b4703;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3769">
+      <stop
+         style="stop-color:#7b4703;stop-opacity:1;"
+         offset="0"
+         id="stop3771" />
+      <stop
+         id="stop3783"
+         offset="0.0625"
+         style="stop-color:#7b4703;stop-opacity:0.9372549;" />
+      <stop
+         id="stop3781"
+         offset="0.125"
+         style="stop-color:#7b4703;stop-opacity:0.8745098;" />
+      <stop
+         id="stop3779"
+         offset="0.25"
+         style="stop-color:#7b4703;stop-opacity:0.74901961;" />
+      <stop
+         id="stop3777"
+         offset="0.78076923"
+         style="stop-color:#7b4703;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#7b4703;stop-opacity:0;"
+         offset="1"
+         id="stop3773" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3805"
+       id="linearGradient3823"
+       x1="193.60001"
+       y1="562.86768"
+       x2="484.06546"
+       y2="562.86768"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.79980469"
+     inkscape:cx="-20.954225"
+     inkscape:cy="246.59143"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-192.77962,-346.78174)">
+    <path
+       sodipodi:type="arc"
+       style="fill:url(#linearGradient3823);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20.39951134000000010;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2985"
+       sodipodi:cx="338.83273"
+       sodipodi:cy="562.86768"
+       sodipodi:rx="135.03297"
+       sodipodi:ry="210.67644"
+       d="m 473.86571,562.86768 a 135.03297,210.67644 0 1 1 -270.06595,0 135.03297,210.67644 0 1 1 270.06595,0 z"
+       transform="matrix(1.0415501,0,0,1,-14.07854,0)"
+       inkscape:export-xdpi="12.32"
+       inkscape:export-ydpi="12.32"
+       inkscape:export-filename="/home/bigt/williamsburg/graphic/bean.png"
+       inkscape:transform-center-x="-58.764343"
+       inkscape:transform-center-y="-51.262515" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 337.58242,353.44155 c 0,0 90.598,103.11799 -2.50061,208.80097 -87.04322,98.80907 5.00122,210.05129 5.00122,210.05129 l 0,0"
+       id="path3759"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscc"
+       inkscape:export-xdpi="12.32"
+       inkscape:export-ydpi="12.32"
+       inkscape:export-filename="/home/bigt/williamsburg/graphic/bean.png" />
+  </g>
+</svg>

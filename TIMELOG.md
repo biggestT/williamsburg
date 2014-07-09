@@ -15,5 +15,6 @@
 * 2014-06-03 parallax effect and content insertion 7 hrs 6 min
 * 2014-07-04 finishing touch 7 hrs 22 min
 * 2014-07-05 meeting and start up of phase 0 hrs 56 min
+* 2014-07-07 interactive map 4 hrs 11 min
 
-### Total time spent: 85 hours and 25 minutes 
+### Total time spent: 70 hours and 36 minutes 

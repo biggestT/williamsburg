@@ -7,7 +7,6 @@ $(function () {
 		// hideElement: function($elem) { $elem.fadeOut(50); },
 		hideDistantElements: 1
 	});
-
 	
 
 	var paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
