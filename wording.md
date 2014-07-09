@@ -5,8 +5,6 @@
 除了绝赞的红酒之外这里也有非常好的咖啡选择了哦！附近的朋友赶紧参观下。
 
 
- 
-
 Xun Mi
 Filled with vintage furniture, home made New Zealand pies, an outside garden and a sausage dog. Xun Mi is a hidden gem.
 When Ash (the owner) isn´t in his paddling pool hes making legit latte´s.
@@ -29,7 +27,7 @@ Specchi
 周末到了，和闺蜜们一起来Caffe Specchi享受欧式情调的小资下午茶吧！点上一份诱人甜品搭配100%上选味炼咖啡豆所调配出独特香醇咖啡，在入口的一刹那，品尝到咖啡浓郁的滋味。Caffe Specchi口味和品相有口皆碑颇受欢迎。
 地址：静安区南京西路1266号恒隆广场103铺(近西康路) 
 
-镜子 Cafe & Restaurant
+镜子 jingzi Cafe & Restaurant
 Now supplied with WCR Espresso blend, Shanghai roast. Their coffee just reached the bonus level.
 A chic Italian cafe and restaurant, they specialize in colourful Italian dishes fused with cantonese esse.
 中山北路3300号月星环球港一楼L1025商铺

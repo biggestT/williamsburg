@@ -12,6 +12,8 @@
     		{% assign name = slide.name-en %}
     		{% when 'ch' %}
     		{% assign name = slide.name-ch %}
+            {% else %}
+            {% assign name = slide.name %}
     		{% endcase %}
     		<li>
     			<a href="#{{ forloop.index }}" class="short-menu-item"> {{ name }} </a>

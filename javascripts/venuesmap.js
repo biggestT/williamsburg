@@ -2,7 +2,7 @@ $('#map').ready( function() {
 
 
 	var apiKey = "AgX3eE4RIEXmpni_wmiIGKtGRtWFcvrgHdZARhqcCiFYGzD78r0q9RcOuix15M5e";
-	var map;
+	var map, selectControl, selectedVenue;
 
 	var osmLayer = new OpenLayers.Layer.OSM("MapQuest",
 		[
@@ -12,15 +12,31 @@ $('#map').ready( function() {
       "http://otile4.mqcdn.com/tiles/1.0.0/map/${z}/${x}/${y}.png"
     ])
 
-	var startLocation = new OpenLayers.LonLat(121.4593505859375, 31.243333658561085).transform("EPSG:4326", "EPSG:3857");
+	var startLocation = new OpenLayers.LonLat(121.4093505859375, 31.243333658561085).transform("EPSG:4326", "EPSG:3857");
 
+	function onPopupClose(evt) {
+    selectControl.unselect(selectedVenue);
+  }
+  function onFeatureSelect(feature) {
+    // selectedVenue = feature;
+    console.log('selected venue');
+    // popup = new OpenLayers.Popup.FramedCloud('venue', feature.geometry.getBounds().getCenterLonLat(), null, 'hej', null, true, onPopupClose);
+    // feature.popup = popup;
+    // map.addPopup(popup);
+  }
+  function onFeatureUnselect(feature) {
+    console.log('unselected venue');
+    // map.removePopup(feature.popup);
+    // feature.popup.destroy();
+    // feature.popup = null;
+  }    
 
 	var venuesLayer = new OpenLayers.Layer.Vector('Overlay', {
 		styleMap: new OpenLayers.StyleMap({
 			externalGraphic: '../graphic/beanmark.png',
 			graphicWidth: 27,
 			graphicHeight: 40,
-			graphicYOffset: -24,
+			graphicYOffset: -40,
 			title: '${tooltip}'
 		})
 	});
@@ -34,8 +50,6 @@ $('#map').ready( function() {
 		venuesLayer.addFeatures([olVector]);
 	});
 
-	console.log(venues);
-
 
 	map = new OpenLayers.Map({
 		div: 'map', 
@@ -44,7 +58,12 @@ $('#map').ready( function() {
     zoom: 12
   });
 
-	console.log(map);
+	var polygonLayer = new OpenLayers.Layer.Vector("Polygon Layer");
+  selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {onSelect: onFeatureSelect, onUnselect: onFeatureUnselect});
+  selectControl.activate();
+  map.addControl(selectControl);
+  
+	console.log(venues);
 })
 
 function Venue (olPoint, olVector, index) {

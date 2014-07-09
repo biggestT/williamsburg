@@ -182,6 +182,7 @@ h2 {
 .navbar-fixed-bottom {
   max-height: 100px;
   padding-top: 20px;
+  z-index: 2000;
 }
 .footer p {
   font-size: 90%;
@@ -208,15 +209,18 @@ ul {
 .category-title {
   margin-bottom: 20px;
 }
-.category-content h1 {
+.category-content h1, .venue-content h1 {
   font-size: 300%;
   /*font-family: 'Gotham Round';*/
 }
-.category-content h2 {
+.category-content h2, .venue-content h2 {
   font-size: 100%;
   font-family: 'Gotham Round';
   display: inline;
   margin: 20px 20px 20px 0px;
+}
+.venue-content p {
+  font-size: 80%;
 }
 .category-image {
   margin-bottom: 20px;
@@ -264,9 +268,20 @@ ul {
   margin-top: 40px;
 }
 
-
+/* VENUESMAP */
 #map {
   margin: 20px;
+}
+.venue {
+  display: none;
+  position: absolute;
+  top: 100px;
+}
+.venue-container {
+  z-index: 1200;
+  /* background-color: rgb(53, 27, 4); */
+  border-radius: 20px;
+  padding: 20px;
 }
 
 /* PARALLAX CSS */
