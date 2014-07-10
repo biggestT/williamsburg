@@ -318,17 +318,30 @@ img {
   width: 300px;
 }
 
-/* test coffee cup elements */
-.first-scroll {
+img.family {
+  width: 60px;
+  display: inline;
+}
+/* parallax scroll images */
+.first-scroll, .third-scroll {
   height: 350px;
-  top: 300px;
   left: 2vw;
 }
-
-.second-scroll {
-  top: 700px;
+.second-scroll, .fourth-scroll {
   right: 2vw;
   height: 400px;
+}
+.first-scroll {
+  top: 300px;
+}
+.second-scroll {
+  top: 700px;
+}
+.third-scroll {
+  top: 1100px;
+}
+.fourth-scroll {
+  top: 1500px;
 }
 
 

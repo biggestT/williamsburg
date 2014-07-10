@@ -8,7 +8,7 @@ var unSelectedMarkerStyle = new OpenLayers.Style({
 })
 
 var selectedMarkerStyle = new OpenLayers.Style({
-	externalGraphic: '../graphic/beanmarker-selected.png',
+	externalGraphic: '../graphic/bean-cool.png',
 	graphicWidth: 49,
 	graphicHeight: 40
 })
