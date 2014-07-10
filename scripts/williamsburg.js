@@ -1,3 +1,5 @@
+var paddingTop;
+
 $(function () {
 
 	$.stellar({
@@ -9,20 +11,16 @@ $(function () {
 	});
 	
 
-	var paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
+	paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
 
-	$('.submenu a').click(function () {
-		$('html, body').animate({
-			scrollTop: $($(this).attr('href')).offset().top - paddingTop - 25
-		}, 400);
-		$(this).toggleClass('active');
-	})
+	$('.submenu a').click(scrollToSlide);
 
-	console.log(screen.width);
 	// only load parallaximages if on desktop
 	loadImgIfDesktop();
-}) 
 
+	// make first submenu-item active
+	$('.submenu a:first').addClass('active');
+}) 
 
 function loadImgIfDesktop() {
 	if (screen.width>=768) {
@@ -32,3 +30,10 @@ function loadImgIfDesktop() {
 	}	
 }
 
+function scrollToSlide(e) {
+	$('.submenu a').removeClass('active');
+	$(this).addClass('active');
+	$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top - paddingTop - 25
+		}, 400);
+}

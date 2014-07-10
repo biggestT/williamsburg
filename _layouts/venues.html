@@ -7,10 +7,10 @@ layout: default
 {% assign venues = site.categories['venues'] %}
 
 {% for venue in venues %}
-	<a id="venue-{{ forloop.index }}" data-name="{{ venue.name }}" data-lon="{{ venue.coord[0] }}" data-lat="{{ venue.coord[1] }}" class="category-anchor venue-meta">
+	<a id="{{ forloop.index }}" data-name="{{ venue.name }}" data-lon="{{ venue.coord[0] }}" data-lat="{{ venue.coord[1] }}" class="category-anchor venue-meta">
 	</a>
 	<div class="row venue">
-		<div class="col-sm-6 col-xs-12 col-sm-offset-6 venue-container">
+		<div class="col-sm-6 col-xs-6 col-xs-offset-6 venue-container">
 			<!-- <i class="fa fa-c"></i> -->
 			<!-- <div class="row"> -->
 				<div class="col-sm-6 col-xs-12 venue-content">

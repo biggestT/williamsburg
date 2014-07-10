@@ -46,7 +46,7 @@ p>img {
 a {
   color: #FFF;
 }
-b, a:hover, a:active, a:focus {
+b, a:hover, a:focus, a.active, a:active {
   color: #ac9166;
   text-decoration: none;
 }

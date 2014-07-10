@@ -16,7 +16,7 @@
             {% assign name = slide.name %}
     		{% endcase %}
     		<li>
-    			<a href="#{{ forloop.index }}" class="short-menu-item"> {{ name }}</a>
+    			<a href="#{{ forloop.index }}" id="link-{{ forloop.index }}"class="short-menu-item"> {{ name }}</a>
     		</li>
     		{% endfor %}
     	</ul>
