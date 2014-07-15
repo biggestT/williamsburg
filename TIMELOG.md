@@ -18,5 +18,6 @@
 * 2014-07-07 interactive map 4 hrs 11 min
 * 2014-07-09 venues map 6 hrs 49 min
 * 2014-07-10 connected map markers with submenu and changed intropage 6 hrs 23 min
+* 2014-07-12 gave the coffee section an interactive map too 5 hrs 38 min
 
-### Total time spent: 83 hours and 48 minutes 
+### Total time spent: 110 hours and 26 minutes 

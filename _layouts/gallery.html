@@ -2,9 +2,26 @@
 layout: default
 ---
 
+{% include venuesmap.html %}
+<script type="text/javascript">
+	$(window).load( function () {
+		initMap({
+			zoomLevel: 2,
+			startLocation: [30.4093505859375, 31.243333658561085],
+			unselectedGraphic: 'graphic/bean.png',
+			unselectedWidth: 30,
+			unselectedHeight: 44,
+			selectedGraphic: 'graphic/bean-cool.png',
+			selectedWidth: 69,
+			selectedHeight: 60
+		})
+	})
+</script>
+
+
 {% assign slides = site.categories['coffee'] %}
 
-<div class="container content 
+<div class="container 
           {% if page.lang == 'ch' %} 
           ch-content
           {% else %}
@@ -13,7 +30,6 @@ layout: default
       ">
         <div class="row">
               
-<div class="col-sm-11 col-xs-12 category-content padded">
 {% for slide in slides%}
 
 {% case page.lang %}
@@ -27,31 +43,31 @@ layout: default
 		{% assign text = slide.text-ch %}
 {% endcase %}
 
-<a id="{{ forloop.index }}" class="category-anchor">
+<a id="{{ forloop.index }}" class="category-anchor geo-slide-meta" data-name="{{ name }}" data-lon="{{ slide.coord[0] }}" data-lat="{{ slide.coord[1] }}">
 </a>
-<div class="row coffee-entry">
-	<div class="col-sm-6 col-xs-12 category-title">
-		<h1>{{ name }}</h1>
-		<h2>
-			<span class="glyphicon glyphicon-certificate"></span> {{ slide.code }} 
-		</h2>
-		<h2>
-			<span class="glyphicon glyphicon-globe"></span> {{ origin }} 
-		</h2>
-		<div class="caption en-content">
-			<p>{{ text }}</p>
+<div class="row venu">
+	<div class="col-sm-6 col-xs-6 col-xs-offset-6 venue-container">
+		<div class="col-sm-6 col-xs-12 venue-content">
+			<h1>{{ name }}</h1>
+			<h2>
+				<span class="glyphicon glyphicon-certificate"></span> {{ slide.code }} 
+			</h2>
+			<h2>
+				<span class="glyphicon glyphicon-globe"></span> {{ origin }} 
+			</h2>
+			<div class="caption en-content">
+				<p>{{ text }}</p>
+			</div>
 		</div>
-	</div>
-	<!-- <div class="col-sm-6 col-xs-12"> -->
-	<!-- </div> -->
-	<div class="col-sm-6 col-xs-12 category-image thumbnail">
-		<img class="img-responsive desktop-only" data-desktop-src="images/coffee/{{ slide.image }}" src="//:0" alt="...">
+		<div class="col-sm-6 col-xs-12 venue-img">
+			<img class="img-responsive desktop-only thumbnail" data-desktop-src="images/coffee/{{ slide.image }}" src="//:0" alt="...">
+
+		</div>
 	</div>
 </div>
 {% endfor %}
-</div>
 
 {% include submenu.html %}
 
- </div>
+	</div>
 </div>

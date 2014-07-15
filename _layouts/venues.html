@@ -3,11 +3,27 @@ layout: default
 ---
 {% include venuesmap.html %}
 
-<div class="container">
+<script type="text/javascript">
+	$(window).load( function () {
+		initMap({
+			zoomLevel: 12,
+			startLocation: [121.4093505859375, 31.243333658561085],
+			unselectedGraphic: 'graphic/cup.png',
+			unselectedWidth: 45,
+			unselectedHeight: 30,
+			selectedGraphic: 'graphic/cup-cool.png',
+			selectedWidth: 45,
+			selectedHeight: 41
+		});
+	})
+</script>
+
+
+<div class="container en-content">
 {% assign venues = site.categories['venues'] %}
 
 {% for venue in venues %}
-	<a id="{{ forloop.index }}" data-name="{{ venue.name }}" data-lon="{{ venue.coord[0] }}" data-lat="{{ venue.coord[1] }}" class="category-anchor venue-meta">
+	<a id="{{ forloop.index }}" data-name="{{ venue.name }}" data-lon="{{ venue.coord[0] }}" data-lat="{{ venue.coord[1] }}" class="category-anchor geo-slide-meta">
 	</a>
 	<div class="row venue">
 		<div class="col-sm-6 col-xs-6 col-xs-offset-6 venue-container">

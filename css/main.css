@@ -65,6 +65,7 @@ b, a:hover, a:focus, a.active, a:active {
 b, h1, h2, h3, h4 {
   color: rgb(194, 158, 71);
   text-transform: capitalize;
+  overflow-wrap: break-word;
 }
 h1 {
   margin-top: 0px;
@@ -212,12 +213,13 @@ ul {
 .category-content h1, .venue-content h1 {
   font-size: 300%;
   /*font-family: 'Gotham Round';*/
+  overflow-wrap: break-word;
 }
 .category-content h2, .venue-content h2 {
   font-size: 100%;
   font-family: 'Gotham Round';
-  display: inline;
-  margin: 20px 20px 20px 0px;
+  /* display: inline; */
+  margin: 10px 0px 0px 0px;
 }
 .venue-content p {
   font-size: 80%;

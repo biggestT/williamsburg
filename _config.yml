@@ -11,15 +11,12 @@ menuitems:
   about:
     en: venues
     ch: 关于
-  coffee:
-    en: coffees
+  coffees:
+    en: coffee
     ch: 咖啡
-  education:
-    en: tips
+  services:
+    en: souk
     ch: 教育
-  buy:
-    en: buy
-    ch: 买
   news:
     en: news
     ch: 新闻

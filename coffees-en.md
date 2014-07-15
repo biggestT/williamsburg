@@ -1,6 +1,0 @@
----
-layout: gallery
-lang: en
----
-
-

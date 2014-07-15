@@ -19,24 +19,26 @@ lang: en
 
 <!-- streetart image-->
 <div  class="cup parallax third-scroll" data-stellar-ratio="0.6" >
-  <img class="desktop-only" src="//:0" data-desktop-src="graphic/bean-heart.svg"/>
+  <img class="desktop-only" src="//:0" data-desktop-src="images/polaroid1.png"/>
 </div>
 
 <!--  polaroid image -->
 <div class="cup parallax fourth-scroll" data-stellar-ratio="0.6" >
-  <img class="desktop-only" src="//:0" data-desktop-src="graphic/bean-cool.svg"/>
+  <img class="desktop-only" src="//:0" data-desktop-src="images/polaroid2.png"/>
 </div>
 
 <div id="intro"  class="row center">
-    <h1>Welcome motherfucker</h1>
+    <h1>Welcome to Williamsburg</h1>
     <p>Roasters of single origin coffee for selected venues in Shanghai</p>
-    <h3>- The Willyburg Clan -</h3>
+    <!-- <h3>- The Willyburg Clan -</h3>
     {% assign venues = site.categories['venues'] %}
     {% for venue in venues %}
     {% if venue.logo %}
+    <a href="{{ BASE_PATH }}/venues-en.html#{{ forloop.index }}">
       <img class="img-responsive thumbnail family" src="images/venues/{{ venue.logo }}"/>
+    </a>
     {% endif %}
-    {% endfor %}
+    {% endfor %} -->
 </div> 
 
 <div id="someshit" class="row handwritten" >

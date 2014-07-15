@@ -1,8 +1,30 @@
-$('#map').ready( function() {
 
 
-	var apiKey = "AgX3eE4RIEXmpni_wmiIGKtGRtWFcvrgHdZARhqcCiFYGzD78r0q9RcOuix15M5e";
-	var map, selectControl, selectedVenue;
+var venuesLayer, selectControl, map, selectedVenue;
+
+
+function onFeatureSelect(feature) {
+	var id = '#'+feature.data.id;
+	$('body').animate({
+		scrollTop: $(id).offset().top - paddingTop - 25
+	}, 400);
+	console.log($(id).offset().top);
+	
+	var menuItemId = '#link-'+feature.data.id;
+	$('.submenu a').removeClass('active');
+	$(menuItemId).addClass('active');
+}
+
+  
+function selectFeature(id) {
+	var chosenVenue = venuesLayer.getFeaturesByAttribute('id', id)[0];
+	// unselect all venues
+	selectControl.unselectAll();
+	// select chosen venue on the map
+	selectControl.select(chosenVenue);
+}
+
+function initMap(options) {
 
 	var osmLayer = new OpenLayers.Layer.OSM("MapQuest",
 		[
@@ -12,56 +34,57 @@ $('#map').ready( function() {
       "http://otile4.mqcdn.com/tiles/1.0.0/map/${z}/${x}/${y}.png"
     ])
 
-	var startLocation = new OpenLayers.LonLat(121.4093505859375, 31.243333658561085).transform("EPSG:4326", "EPSG:3857");
+	var startLocation = new OpenLayers.LonLat(options.startLocation[0],options.startLocation[1]).transform("EPSG:4326", "EPSG:3857");
 
-	function onPopupClose(evt) {
-    selectControl.unselect(selectedVenue);
-  }
-  function venueSelected(feature) {
-  	var id = feature.data.id;
-  	$(id).click();
-  }
-  function onFeatureSelect(feature) {
-  	venueSelected(feature);
-  }
+	var	unSelectedMarkerStyle = new OpenLayers.Style({
+		externalGraphic: options.unselectedGraphic,
+		title: '${tooltip}',
+		graphicWidth: options.unselectedWidth,
+		graphicHeight: options.unselectedHeight
+	});
 
-	var venuesLayer = new OpenLayers.Layer.Vector('Overlay', {
+
+	var selectedMarkerStyle = new OpenLayers.Style({
+		externalGraphic: options.selectedGraphic,
+		graphicWidth: options.selectedWidth,
+		graphicHeight: options.selectedHeight
+	});
+
+	venuesLayer = new OpenLayers.Layer.Vector('Overlay', {
 		styleMap: new OpenLayers.StyleMap({
-			externalGraphic: '../graphic/beanmark.png',
-			graphicWidth: 27,
-			graphicHeight: 40,
-			graphicYOffset: -40,
-			title: '${tooltip}'
+			'default': unSelectedMarkerStyle,
+			'select': selectedMarkerStyle
 		})
 	});
 
-	var venues = [];
-	$('.venue-meta').each(function (index) {
+
+	$('.geo-slide-meta').each(function (index) {
 		var $this = $(this);
 		var olPoint = new OpenLayers.Geometry.Point($this.attr('data-lon'), $this.attr('data-lat')).transform("EPSG:4326", "EPSG:3857");
-		var olVector = new OpenLayers.Feature.Vector(olPoint, {tooltip: $this.attr('name'), id: $this.attr('id')})
-		venues.push(new Venue (olPoint, olVector, index));
+		var olVector = new OpenLayers.Feature.Vector(olPoint, {tooltip: $this.attr('data-name'), id: $this.attr('id')})
 		venuesLayer.addFeatures([olVector]);
 	});
-
 
 	map = new OpenLayers.Map({
 		div: 'map', 
     layers: [osmLayer, venuesLayer],
     center: startLocation,
-    zoom: 12
+    zoom: options.zoomLevel
   });
 
-	var polygonLayer = new OpenLayers.Layer.Vector("Polygon Layer");
-  selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {onSelect: onFeatureSelect});
+  selectControl = new OpenLayers.Control.SelectFeature(venuesLayer, {onSelect: onFeatureSelect});
   map.addControl(selectControl);
   selectControl.activate();
-  
-	console.log(venues);
-})
 
-function Venue (olPoint, olVector, index) {
-	this.olPoint = olPoint;
-	this.olVector = olVector;
-	this.index = index;
+  $('.submenu a').click(function (e){
+  	// remove initial hashtag
+  	var id = $(this).attr('href').substr(1);
+  	selectFeature(id);
+  })
+
+  if (location.hash){
+  	selectFeature(location.hash.substr(1));
+  } else {
+  	selectFeature('1');  	
+  }
 }

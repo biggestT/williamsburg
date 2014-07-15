@@ -1,5 +1,4 @@
-var paddingTop;
-
+var paddingTop = 82;
 $(function () {
 
 	$.stellar({
@@ -11,7 +10,7 @@ $(function () {
 	});
 	
 
-	paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
+	// paddingTop = $('body').css('padding-top').replace(/[^-\d\.]/g, '');
 
 	$('.submenu a').click(scrollToSlide);
 
