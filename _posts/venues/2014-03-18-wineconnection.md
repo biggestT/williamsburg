@@ -5,8 +5,8 @@ name-en: wine connection
 image: wineconnection.jpg
 logo: logo_wineconnection.jpg
 categories: venues
-address:  unknown
-coord: [121.4293505859375, 31.203333658561085]
+address:  439 yuyuan road
+coord: [31.221518, 121.438627]
 ---
 
 愚园路这种地方你懂的。
