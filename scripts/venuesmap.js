@@ -5,6 +5,7 @@ var venuesLayer, selectControl, map, selectedVenue;
 
 function onFeatureSelect(feature) {
 	var id = '#'+feature.data.id;
+	map.setCenter(feature.geometry.getBounds().getCenterLonLat(), 15);
 	$('body').animate({
 		scrollTop: $(id).offset().top - paddingTop - 25
 	}, 400);
