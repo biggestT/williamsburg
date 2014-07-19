@@ -16,8 +16,8 @@
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    inkscape:export-filename="/home/bigt/williamsburg/graphic/maintenance.png"
-   inkscape:export-xdpi="8.9245052"
-   inkscape:export-ydpi="8.9245052"
+   inkscape:export-xdpi="14.282526"
+   inkscape:export-ydpi="14.282526"
    sodipodi:docname="maintenance.svg">
   <defs
      id="defs4">
@@ -278,9 +278,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.39990234"
-     inkscape:cx="269.51785"
-     inkscape:cy="384.74432"
+     inkscape:zoom="0.19995117"
+     inkscape:cx="38.463364"
+     inkscape:cy="-126.79309"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -311,7 +311,7 @@
      id="layer1"
      transform="translate(1162.0707,-373.85044)">
     <g
-       transform="matrix(1.4778155,0,0,1.4778155,-1178.773,-27.49164)"
+       transform="matrix(1.4778155,0,0,1.4778155,-1278.7974,-7.486756)"
        id="g3262">
       <path
          sodipodi:type="arc"
@@ -340,13 +340,13 @@
     </g>
     <path
        style="fill:#573800;fill-opacity:1;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -558.72708,871.54339 c -43.1628,230.81831 -95.58041,27.08893 -159.86063,26.00432 -65.30404,-1.10188 -98.89154,101.65876 -118.80845,28.73167 -57.68196,-211.20639 212.80515,-120.12488 278.66908,-54.73599 z"
+       d="m -658.7515,891.54827 c -43.1628,230.81833 -95.58041,27.08893 -159.86063,26.00432 -65.30404,-1.10188 -98.89154,101.65881 -118.80845,28.73167 -57.68196,-211.20639 212.80515,-120.12488 278.66908,-54.73599 z"
        id="path6951"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssc" />
     <g
        id="g6957"
-       transform="matrix(0.95518884,0.29599711,-0.29599711,0.95518884,171.69927,230.62402)"
+       transform="matrix(0.95518884,0.29599711,-0.29599711,0.95518884,71.67485,250.6289)"
        style="fill:#001057;fill-opacity:1">
       <path
          inkscape:connector-curvature="0"
@@ -361,13 +361,5 @@
          d="m -888.81183,579.22733 c -10.81514,179.24954 315.38497,89.23613 397.59707,20.00488"
          style="fill:#001057;fill-opacity:1;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
-    <path
-       style="fill:#373737;fill-opacity:1;stroke:#000000;stroke-width:22.11145401;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -663.11076,1116.6734 -227.3213,-189.34994 c 0,0 27.26791,-76.06926 -41.04396,-140.56868 -68.31174,-64.49988 -178.83148,10.61116 -178.83148,10.61116 l 103.2402,29.00532 40.19088,37.27685 -10.78814,55.60233 -52.94784,12.88595 -36.2105,-30.16185 -78.8852,-27.71522 c 0,0 -19.0923,71.48122 15.1495,96.20363 34.2417,24.72285 107.0918,47.41105 137.69634,34.91035 30.60454,-12.50078 44.90114,-19.58874 44.90114,-19.58874 l 231.34479,192.70134 z"
-       id="path6178"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccscccccccssccc"
-       inkscape:transform-center-y="99.516139"
-       inkscape:transform-center-x="54.43011" />
   </g>
 </svg>

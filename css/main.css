@@ -80,10 +80,13 @@ h2 {
   /* font-family: 'Birch'; */
 }
 .en-content h1 {
-  font-size: 400%;
+  font-size: 300%;
 }
 .en-content h2 {
   font-size: 200%;
+}
+h3 {
+  font-size: 150%;
 }
 
 /* Chinese header styles */
@@ -350,8 +353,6 @@ img.family {
 
 
 .center{
-  margin-top: 10vh;
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -364,6 +365,19 @@ img.family {
 }
 
 /* SOUK PAGE */
+#intro {
+  margin-top: 10vh;
+}
+.icon-over {
+  top: -50px;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  height: 150px;
+}
+.service {
+  margin: 100px 0px;
+}
 .cover-strip {
   background: url(none.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -437,6 +451,15 @@ img.family {
   .story {
     height: auto;
   }
+  .icon-group-big img {
+    height: 60px;
+  }
+  .icon-group-big li {
+    margin: 0px 10px;
+  }
+  h3 {
+    font-size: 120%;
+  }
   .category-image {
     visibility: hidden;
   }
@@ -445,7 +468,9 @@ img.family {
     height: 0px;
   }
   .handwritten img {
-    width: 90px;
+    display: none;
+    width: 0px;
+    height: 0px;
   }
   .navbar {
     /* margin-bottom: 50px; */
