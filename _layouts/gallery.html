@@ -9,11 +9,11 @@ layout: default
 			zoomLevel: 2,
 			startLocation: [30.4093505859375, 31.243333658561085],
 			unselectedGraphic: 'graphic/bean.png',
-			unselectedWidth: 30,
-			unselectedHeight: 44,
+			unselectedWidth: 24,
+			unselectedHeight: 35,
 			selectedGraphic: 'graphic/bean-cool.png',
-			selectedWidth: 69,
-			selectedHeight: 60
+			selectedWidth: 40,
+			selectedHeight: 35
 		})
 	})
 </script>
@@ -21,15 +21,14 @@ layout: default
 
 {% assign slides = site.categories['coffee'] %}
 
-<div class="container 
+<div class="container scroll-list
           {% if page.lang == 'ch' %} 
           ch-content
           {% else %}
           en-content
           {% endif  %}
       ">
-        <div class="row">
-              
+                      
 {% for slide in slides%}
 
 {% case page.lang %}
@@ -69,5 +68,5 @@ layout: default
 
 {% include submenu.html %}
 
-	</div>
+
 </div>
