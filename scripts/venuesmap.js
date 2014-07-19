@@ -1,16 +1,17 @@
 
 
-var venuesLayer, selectControl, map, selectedVenue;
+var venuesLayer, selectControl, map, selectedVenue, zoomLevel;
 
 
 function onFeatureSelect(feature) {
 	var id = '#'+feature.data.id;
-	map.setCenter(feature.geometry.getBounds().getCenterLonLat(), 15);
+	map.setCenter(feature.geometry.getBounds().getCenterLonLat(), zoomLevel);
 	$('body').animate({
 		scrollTop: $(id).offset().top - paddingTop - 25
 	}, 400);
 	console.log($(id).offset().top);
 	
+	console.log(feature);
 	var menuItemId = '#link-'+feature.data.id;
 	$('.submenu a').removeClass('active');
 	$(menuItemId).addClass('active');
@@ -66,6 +67,7 @@ function initMap(options) {
 		venuesLayer.addFeatures([olVector]);
 	});
 
+	zoomLevel = options.zoomLevel;
 	map = new OpenLayers.Map({
 		div: 'map', 
     layers: [osmLayer, venuesLayer],

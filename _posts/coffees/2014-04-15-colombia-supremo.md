@@ -4,7 +4,7 @@ image: ColombiaSepremo.jpg
 categories: coffee
 code: 82.5
 cid: 3
-
+coord: [-74.29733299999998, 4.570868]
 name-ch: 哥伦比亚Supremo
 origin-ch: 哥伦比亚
 text-ch: 这款82.5分的豆子生长在哥伦比亚高原上，它最著名的地方是他适中可口的酸味、顺滑的口感、和坚果的风味。是一款绝对适合刚刚接触精品咖啡的新人尝试的豆子。

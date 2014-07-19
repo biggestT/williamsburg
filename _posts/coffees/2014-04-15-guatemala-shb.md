@@ -4,7 +4,7 @@ image: Guatemala.jpg
 categories: coffee
 code: 82
 cid: 5
-
+coord: [-90.23075899999998, 15.783471]
 name-ch: 危地马拉SHB
 origin-ch: 危地马拉
 text-ch: 这款咖啡豆在危地马拉本地被称作Gran Cru。总体来说这是一款口味比较平衡的豆子。香浓的巧克力气味和干净的口感伴随着蔗糖的甜味，这绝对是一款追求”不会错“的人的最佳选择。
