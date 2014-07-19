@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1269.1217"
-   height="1296.473"
+   width="752.1532"
+   height="928.91498"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
@@ -286,8 +286,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.323091"
-     inkscape:cx="669.98375"
-     inkscape:cy="517.47964"
+     inkscape:cx="-205.73815"
+     inkscape:cy="372.38499"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -316,30 +316,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1257.251,-100.56879)">
-    <path
-       sodipodi:type="star"
-       style="fill:#fff500;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20.52000046;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="path7006"
-       sodipodi:sides="5"
-       sodipodi:cx="-841.8681"
-       sodipodi:cy="-102.1783"
-       sodipodi:r1="673.46063"
-       sodipodi:r2="336.73032"
-       sodipodi:arg1="0.71710065"
-       sodipodi:arg2="1.3454192"
-       inkscape:flatsided="false"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m -334.27116,340.42148 -432.34648,-114.38541 -339.33176,291.30987 -24.8154,-446.53298 -381.9115,-232.704 417.0097,-161.58715 103.29757,-435.12885 282.54159,346.66663 445.75282,-36.22042 -242.38939,375.83891 z"
-       transform="translate(265.68525,869.43583)"
-       inkscape:transform-center-x="46.507346"
-       inkscape:transform-center-y="-18.452252"
-       inkscape:export-xdpi="8.9245052"
-       inkscape:export-ydpi="8.9245052"
-       inkscape:export-filename="/home/bigt/williamsburg/graphic/events.png" />
+     transform="translate(785.18309,-395.57953)">
     <g
-       transform="matrix(2.0665893,0,0,2.0665893,-1173.1828,-310.74295)"
+       transform="matrix(1.7041204,0,0,1.7041204,-996.80117,-61.072126)"
        id="g3262">
       <path
          sodipodi:type="arc"
@@ -367,8 +346,8 @@
          inkscape:export-filename="/home/bigt/williamsburg/graphic/bean.png" />
     </g>
     <path
-       style="fill:#c40016;fill-opacity:1;stroke:#000000;stroke-width:22.49935532;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m -758.48681,714.25684 177.0096,-76.64786 127.07243,45.91979 158.63254,-37.05303 86.64556,-61.34573 104.83414,330.03877 37.508094,7.50163 22.504845,-33.75728 -161.629389,-300.4093 -65.34972,-70.08869 -165.03558,41.25889 -127.52747,-22.50485 -142.53071,22.50485 z"
+       style="fill:#c40016;fill-opacity:1;stroke:#000000;stroke-width:18.55308723;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m -632.71629,701.50382 158.69053,-10.83058 86.1234,70.6851 133.50304,14.88437 84.2399,-23.82131 -9.40253,285.3965 27.08789,16.1598 26.78831,-20.0409 -42.90175,-278.00696 -31.49292,-72.47346 -139.6381,-13.37858 -92.92511,-52.61083 -116.98139,-21.758 z"
        id="path4148"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccccccc" />

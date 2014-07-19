@@ -9,22 +9,23 @@ lang: en
 </div> -->
 <div id="intro" class="row center">
 	<h1>Experts in coffee</h1>
+	<h2>assisting you all the way from bean to cup</h2>
 	<ul class="icon-group-big">
 		<li>
 			<img src="graphic/wholesale.png"></i>
-			<h2>wholesale</h2>
+			<h3>wholesale</h3>
 		</li>
 		<li>
 			<img src="graphic/training.png"></i>
-			<h2>training</h2>
+			<h3>training</h3>
 		</li>
 		<li>
 			<img src="graphic/events.png"></i>
-			<h2>events</h2>
+			<h3>events</h3>
 		</li>
 		<li>
 			<img src="graphic/maintenance.png"></i>
-			<h2>maintenance</h2>
+			<h3>maintenance</h3>
 		</li>
 
 </div>
